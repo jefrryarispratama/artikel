@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.news-title{
+    max-height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.HeaderOne {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.headerContainer {
+
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0px auto;
+}
+
+.headerTitle {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.hamburgerBar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hamburgerLine {
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+
+.loginButton{
+    transition: background-color 0.5s, color 0.5s;
+    
+}
+
+.loginButton:hover{
+    border-color: lightcoral;
+    background-color: black;
+    color: white;
+    transition: background-color 1s;
+}
+
+.loginButton:active{
+    background-color: rgba(49, 49, 49, 0.338);
+}
+
+.bookmarkContainer{
+    margin: 0px auto;
+    max-width: 1250px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 40px;
+
+}
+
+.bookmarkContent{
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    gap: 20px;
+}
+
+#side-navigation {
+    transition: .30s;
+    left: 0;
+}
+
+.hide {
+    left: -1300px !important;
+}
+
+
+
+
+

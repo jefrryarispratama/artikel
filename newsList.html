@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="newsList.css">
+
+    <style>
+        .expandingBox {
+            height: 500px !important;
+        }
+
+        #expandingBox {
+            height: 100px;
+            transition: .5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="flex items-center justify-between px-5 border-black border-b-[1px] mb-[60px]">
+            <div>
+                <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px]">
+                    Artikel | Admin
+                </h2>
+            </div>
+
+            <div class="flex flex-row p-[26px]	">
+                <button class="mr-[5px]">
+                    <span>
+                        Willson Andrew
+                    </span>
+                </button>
+
+                <button>
+                    <img class="w-[20px] mt-[4px]" src="iconassets/chevron-down.svg ">
+                </button>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="accountContent  ">
+        <div class="gridContainer">
+            <div class=" flex flex-col">
+                <div style="position: sticky; top: 0">
+                    <div class="leftSide">
+                        <div class="flex flex-col gap-5  pb-7">
+                            <p class="pl-2 font-[Lato] text-[20px] font-normal"><a href="adminAccount.html">Admin</a>
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col gap-5 pb-7">
+                            <p class=" pl-2 font-[Lato] text-[20px] border-black border-l-[2px] font-bold"><a
+                                    href="newsList.html">Berita</a></p>
+                        </div>
+
+                        <div class="flex flex-col gap-5 border-black border-b-[1px] pb-7">
+                            <p class=" pl-2 font-[Lato] text-[20px] font-normal"><a href="addNews.html">Tambah
+                                    Berita</a>
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" rightSide ">
+                <div class="flex justify-between mb-[1cm] mx-[5px]">
+                    <div class="flex">
+                        <input
+                            class="h-[33px] w-[550px] border-[1px] rounded-full focus:outline-none px-[20px] border-[1.5px] border-current   "
+                            placeholder="search">
+
+                        <img class="relative right-9 top-1 h-[24px] bg-white" src="iconassets/search.svg ">
+
+                    </div>
+
+                    <div class="flex flex-row ">
+                        <button
+                            class="flex items-center mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                            Kategori
+
+                            <img class="relative w-[20px] ml-[5px]" src="iconassets/chevron-down.svg">
+                        </button>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col mb-3 ">
+                    <div class="flex border-[1px] border-current p-[8px]">
+                        <div class="mr-[5px]">
+                            <img class="w-[400px] h-[160px] object-cover object-center" src="assets/26786.png">
+
+                        </div>
+
+                        <div class="flex  flex-col justify-between w-full ">
+
+                            <h4 class="font-[inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8">
+                                French protests
+                                intensify
+                                against
+                                pension age
+                                rise
+
+                            </h4>
+
+                            <div class="flex flex-row justify-between">
+                                <div>
+
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Politik
+                                    </button>
+                                </div>
+
+                                <div class="flex flex-row justify-end gap-1">
+
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Edit
+                                    </button>
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex flex-col mb-3 ">
+                    <div class="flex border-[1px] border-current p-[8px]">
+                        <div class="mr-[5px]">
+                            <img class="w-[400px] h-[160px] object-cover object-center" src="assets/26786.png">
+
+                        </div>
+
+                        <div class="flex  flex-col justify-between w-full ">
+
+                            <h4 class="font-[inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8">
+                                French protests
+                                intensify
+                                against
+                                pension age
+                                rise
+
+                            </h4>
+
+                            <div class="flex flex-row justify-between">
+                                <div>
+
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Ekonomi
+                                    </button>
+                                </div>
+
+                                <div class="flex flex-row justify-end gap-1">
+
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Edit
+                                    </button>
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex flex-col mb-3 ">
+                    <div class="flex border-[1px] border-current p-[8px]">
+                        <div class="mr-[5px]">
+                            <img class="w-[400px] h-[160px] object-cover object-center" src="assets/26786.png">
+
+                        </div>
+
+                        <div class="flex  flex-col justify-between w-full ">
+
+                            <h4 class="font-[inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8">
+                                French protests
+                                intensify
+                                against
+                                pension age
+                                rise
+
+                            </h4>
+
+                            <div class="flex flex-row justify-between">
+                                <div>
+
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Ekonomi
+                                    </button>
+                                </div>
+
+                                <div class="flex flex-row justify-end gap-1">
+
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Edit
+                                    </button>
+                                    <button
+                                        class="flex mr-[2px] px-[18px] py-[1px] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

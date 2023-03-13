@@ -1,0 +1,176 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#side-navigation {
+    transition: .30s;
+    left: 0;
+}
+
+.hide {
+    left: -1300px !important;
+}
+
+.HeaderOne {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.headerContainer {
+
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0px auto;
+}
+
+.headerTitle {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.hamburgerBar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hamburgerLine {
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.loginButton{
+    transition: background-color 0.5s, color 0.5s;
+    
+}
+
+.loginButton:hover{
+    border-color: lightcoral;
+    background-color: black;
+    color: white;
+    transition: background-color 1s;
+}
+
+.loginButton:active{
+    background-color: rgba(49, 49, 49, 0.338);
+}
+
+.HeaderTwo {
+    display: flex;
+    width: 100%;
+    /* background-color: #F2F1E9; */
+    margin: 0px auto;
+}
+
+.headerContainerTwo {
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0px auto;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerNavbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbarList {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.content {
+    margin: 0px auto;
+    max-width: 1250px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: 1fr 550px 1fr;
+
+
+}
+
+.contentA {
+    grid-column: 1;
+}
+
+.contentB {
+
+    grid-column: 2;
+    max-width: 100%;
+    width: 90%;
+    margin: 0px auto;
+    height: 500px;
+}
+
+.contentC {
+    grid-column: 3;
+}
+
+.contentContainerTwo {
+    display: grid;
+    grid-template-columns: 470px 340px 340px;
+    margin-top: 30px;
+    gap: 35px;
+}
+
+
+
+.contentContainerThree {
+    display: grid;
+    grid-template-columns: 860px 1fr;
+}
+
+
+
+.ContentG {
+    display: none;
+}
+
+.contentContainerFour {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 45px;
+}
+
+
+.footer{
+    background-color: #F2F1E9;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.footerContainer{
+    flex-direction: column;
+    display: flex;
+    max-width: 1250px;
+    margin: 0px auto;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+
+.footerContent{
+    display: grid;
+    grid-template-columns: 700px 1fr 1fr 1fr;
+    gap:20px;
+}
+

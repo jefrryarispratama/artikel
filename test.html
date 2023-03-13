@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myButton {
+            transition: all 5s ease-in-out;
+            border: solid 1px black;
+        }
+
+        #myButton:hover {
+            cursor: pointer;
+            border: solid 1px black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="myButton">
+        click me
+    </button>
+
+    <script>
+        const button = document.getElementById("myButton");
+        button.addEventListener("mouseover", function () {
+            button.innerText = "Hovered";
+        });
+        button.addEventListener("mouseout", function () {
+            button.innerText = "Click me";
+        });
+
+
+    </script>
+</body>
+
+
+
+</html>
