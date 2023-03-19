@@ -23,78 +23,109 @@
 
 </head>
 
-<body>
+<body class="m-0 p-0">
 
     <header>
-        <div class="HeaderOne">
-            <div class="headerContainer">
-                <div class="headerTitle">
-                    <div class="hamburgerBar">
-                        <span class="hamburgerLine"></span>
-                        <span class="hamburgerLine"></span>
-                        <span class="hamburgerLine"></span>
+
+        <div class="relative flex w-full my-0 mx-auto ">
+            <div class="  w-full max-w-[1220px] relative my-0 mx-auto">
+                <div class="w-full h-[60px] flex items-center justify-between">
+                    <div class="flex items-center">
+
+                        <button class=" flex flex-col gap-[8px]" id="open-nav">
+                            <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                            <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                            <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                        </button>
+
+                        <h2 class="font-['Cormorant_Garamond'] lg:flex hidden ml-2 font-bold text-[45px]"><a
+                                href="landingpage.html">Artikel</a>
+                        </h2>
+
                     </div>
+                    <h2 class="font-['Cormorant_Garamond'] lg:hidden   font-bold text-[45px]"><a
+                            href="landingpage.html">Artikel</a>
+                    </h2>
+                    <input
+                        class="h-[33px] w-2/5 rounded-full  sm:300px hidden lg:flex focus:outline-none px-[20px] border-[1.5px] border-current	"
+                        placeholder="search">
 
-                    <h1 class="font-['Cormorant_Garamond'] font-bold text-[45px]">Artikel</h1>
+                    <div class="flex items-center justify-end">
+                        <button
+                            class="loginButton lg:flex hidden  font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
+                                href="login.html">LOG IN</a>
 
-                </div>
+                        </button>
 
-                <div class="flex items-center justify-center">
-
-                </div>
-
-                <div class="flex items-center justify-end">
-                    <button
-                        class="loginButton font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm">LOG
-                        IN
-                    </button>
-
+                        <img class="absolute  lg:hidden flex right-6 h-[28px] mr-2" src="iconassets/search.svg">
+                        <img class="absolute lg:hidden flex h-[28px]" src="iconassets/user.svg">
+                    </div>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="HeaderTwo">
-            <div class="headerContainerTwo">
-                <div class="headerNavbar">
+        <div class="flex w-full mx-0 my-auto">
+            <div class="hidden lg:flex w-full max-w-[1250px] my-0 mx-auto p-[15px] items-center justify-between">
+                <div class=" w-full flex flex-row justify-between ">
 
                     <p class="font-['Inter']"> PAGI, PEKAN BARU 25 ‘ C</p>
 
-                    <ul class="navbarList font text-[14px] ">
-                        <li><a href="landingpage.html">HOME</a></li>
+                    <ul class="flex gap-[20px] items-center font text-[14px] ">
                         <li><a href="Homepage.html">INDONESIA</a></li>
-                        <li><a href="#">HUBUNGI</a></li>
-                        <li><a href="#">TENTANG KAMI</a></li>
+                        <li><a href="#">EKONOMI</a></li>
+                        <li><a href="#">PENDIDIKAN</a></li>
+                        <li><a href="secondPage.html">POLITIK</a></li>
+                        <li><a href="#">SCIENCE</a></li>
+                        <li><a href="#">SPORT</a></li>
                     </ul>
 
 
 
+
                     <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
+
                 </div>
 
+
             </div>
+
         </div>
 
+        <div class="flex w-full my-0 mx-auto ">
+            <div class="w-full my-0 mx-auto p-[15px] items-center justify-between hidden max-[1024px]:flex ">
+                <div class=" flex flex-row justify-center w-full">
 
+
+                    <p class="font-['Inter']">PAGI, PEKAN BARU 25 ‘ C</p>
+                    <span class="mx-[10px]">&#183; </span>
+                    <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
+
+                </div>
+
+
+            </div>
+
+        </div>
     </header>
 
-    <div class="content">
-        <div class="mainContent">
-            <div class="contentA bg-black  px-[130px] py-[200px]">
+    <div class="mx-auto my-0 max-w-[1250px] w-full p-[15px] mt-[40px]">
+        <div class="grid grid-cols-[1fr,1fr]">
+            <div class=" bg-black  px-[130px] py-[200px]">
                 <p class="text-white text-justify">Artikel merupakan salah satu website berita yang kami rancang dengan
                     mengutamakan
                     tampilan yang minimalis serta elegan dengan tujuan para pembaca merasa nyaman ketika mengakses
                     berita yang sedang dituju</p>
             </div>
 
-            <div class="contentB bg-bottom bg-cover bg-no-repeat   bg-[url('assets/26786.png')]">
+            <div class=" bg-bottom bg-cover bg-no-repeat   bg-[url('assets/26786.png')]">
 
             </div>
 
         </div>
 
-        <div class="contentTwo">
+        <div class="grid grid-cols-[300px,1fr,300px]">
             <div class="bg-[#F0E7E2] py-[6cm] bottom-0 flex justify-center items-center  ">
                 <p class="rotate-[270deg] inline-block text-[50px] font-bold font-[lato]">About Us </p>
             </div>
@@ -113,12 +144,12 @@
 
         </div>
 
-        <div class="contentThree">
-            <div class="contentB bg-bottom bg-cover bg-no-repeat   bg-[url('assets/26786.png')]">
+        <div class="grid grid-cols-[700px,1fr]">
+            <div class=" bg-bottom bg-cover bg-no-repeat   bg-[url('assets/26786.png')]">
 
             </div>
 
-            <div class="contentA bg-black  px-[100px] py-[100px]">
+            <div class=" bg-black  px-[100px] py-[100px]">
                 <p class="text-white text-justify">Artikel merupakan salah satu website berita yang kami rancang dengan
                     mengutamakan
                     tampilan yang minimalis serta elegan dengan tujuan para pembaca merasa nyaman ketika mengakses
@@ -128,15 +159,15 @@
 
         </div>
 
-        <div class="contentFour">
-            <div class="contentA bg-[#16252B]  px-[100px] py-[100px]">
+        <div class="grid grid-cols-[1fr,700px]">
+            <div class=" bg-[#16252B]  px-[100px] py-[100px]">
                 <p class="text-white text-justify">Artikel merupakan salah satu website berita yang kami rancang dengan
                     mengutamakan
                     tampilan yang minimalis serta elegan dengan tujuan para pembaca merasa nyaman ketika mengakses
                     berita yang sedang dituju</p>
             </div>
 
-            <div class="contentB bg-bottom bg-cover bg-no-repeat   bg-[url('iconassets/redocean.jpg')]">
+            <div class=" bg-bottom bg-cover bg-no-repeat   bg-[url('iconassets/redocean.jpg')]">
 
             </div>
 
@@ -147,10 +178,10 @@
     </div>
 
     <footer>
-        <div class=" footer">
-            <div class="footerContainer">
-                <div class="footerContent">
-                    <div class="contentA flex flex-col h-[200px] border-black border-r-[1px] px-[10px]">
+        <div class="bg-black">
+            <div class="flex flex-col max-w-[1220px] mx-auto my-0 justify-center h-[400px] items-center">
+                <div class="grid grid-cols-[800px,1fr,1fr,1fr] text-white">
+                    <div class=" flex flex-col h-[200px] border-white border-r-[1px] px-[10px]">
                         <h4 class="font-['Cormorant_Garamond'] font-bold text-[60px]">
                             Artikel
                         </h4>

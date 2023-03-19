@@ -5,40 +5,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <style>
-        #myButton {
-            transition: all 5s ease-in-out;
-            border: solid 1px black;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-        #myButton:hover {
-            cursor: pointer;
-            border: solid 1px black;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel="stylesheet" href="homepage.css">
+
+
 
 </head>
+ 
+<body class="overflow-x-hidden">
+    <!-- 
+    bagian atas tidak perlu responsive -->
 
-<body>
-    <button id="myButton">
-        click me
-    </button>
 
+    <!-- bagian atas sudah di perbaiki -->
+
+    <div class="flex flex-col  min-w-[380px] flex sm:hidden  w-full my-0 mx-auto p-[15px] mt-[40px] ">
+
+        <!-- ------------------------------------------------------------------------content pertama----------------------------------------- -->
+        <div class="flex flex-col border-black border-b-[1px] pb-5  ">
+            <div>
+
+                <div class=" max-w-full w-11/12	 mx-auto my-0 h-full justify justify-items-center	">
+                    <img class=" w-[95%] h-[200px] object-cover object-center mx-auto mb-[3px]
+                    min-[400px]:h-[250px]
+                    min-[550px]:h-[300px]
+                    " src="assets/pexels-brotin-biswas-518543.jpg">
+
+                    <div class="flex flex-col text-center px-[23px]">
+                        <h4 class="font-[Inter] text-[28px] font-bold text-[#064025] mb-[18px] leading-8 ">
+                            Videos
+                            Contradict Initial Police Report on Tyre Nichols Arrest
+                        </h4>
+
+                        <p class="font-[Lato] mb-[60px]  leading-6">
+                            The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
+                            an
+                            officer’s gun. But videos from the scene refute that account.
+
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+
+                <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8 "> <a
+                        href="readingPage.html">French protests
+                        intensify
+                        against
+                        pension age
+                        rise</a>
+
+                </h4>
+
+                <p class="font-[Lato] mb-[60px] text-center  leading-6">The police said Mr. Nichols refused to obey directions,
+                    “started to
+                    fight” and
+                    reached for an
+                    officer’s gun. But videos from the scene refute that account.
+                </p>
+
+                <div class="border-black border-b-[1px] mb-[15px]"></div>
+
+                <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8">
+                    Videos Contradict Initial Police Report on Tyre Nichols Arrest
+                </h4>
+
+
+                <p class="font-[Lato] mb-[60px] text-center ">
+                    The police said Mr. Nichols refused to obey directions, “started to
+                    fight” and reached for an officer’s gun. But videos from the scene refute that account.
+                </p>
+
+            </div>
+
+
+            <div>
+                <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] text-left mb-[18px] leading-8">
+                    French
+                    protests
+                    intensify against
+                    pension age
+                    rise
+                </h4>
+
+
+                <p class="font-[Lato] mb-[60px] text-center ">The police said Mr. Nichols refused to obey directions, “started to
+                    fight” and
+                    reached for an
+                    officer’s gun. But videos from the scene refute that account.
+                </p>
+
+                <div class="border-black border-b-[1px] mb-[15px]"></div>
+                <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8">Videos
+                    Contradict Initial Police Report on Tyre Nichols Arrest
+                </h4>
+
+                <p class="font-[Lato] mb-[60px] text-center ">The police said Mr. Nichols refused to obey directions, “started to
+                    fight” and reached for an officer’s gun. But videos from the scene refute that account. </p>
+            </div>
+
+
+
+
+
+        </div>
+
+        <!-- --------------------------konten kedua----------------------------- -->
+
+
+
+
+    </div>
+
+
+
+
+    <script src="HiddenContent.js"></script>
     <script>
-        const button = document.getElementById("myButton");
-        button.addEventListener("mouseover", function () {
-            button.innerText = "Hovered";
+        document.getElementById('open-nav').addEventListener('click', function () {
+            document.getElementById('side-navigation').classList.remove('hide');
         });
-        button.addEventListener("mouseout", function () {
-            button.innerText = "Click me";
+        document.getElementById('close-nav').addEventListener('click', function () {
+            document.getElementById('side-navigation').classList.add('hide');
         });
-
-
     </script>
+
+
+
+
 </body>
-
-
 
 </html>

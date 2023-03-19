@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" cIE=edge">
+    <meta name="viewport" cwidth=device-width, initial-scale=1.0">
     <title>Bookmark</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="bookmark.css">
 </head>
 
-<body>
+<body class="m-0 p-0">
     <div class="flex">
         <section id="side-navigation"
             class="hide w-[25%] h-full overflow-y-auto border-black border-[0.1px] fixed top-0 bg-white z-10">
@@ -81,36 +81,90 @@
     </div>
 
     <!-- ---------------------- -->
-    <div class="HeaderOne">
-        <div class="headerContainer">
-            <div class="headerTitle" id="open-nav">
-                <button class="hamburgerBar">
-                    <span class="hamburgerLine"></span>
-                    <span class="hamburgerLine"></span>
-                    <span class="hamburgerLine"></span>
-                </button>
 
-                <h1 class="font-['Cormorant_Garamond'] font-bold text-[45px]">Artikel | Bookmark</h1>
+    <div class="relative flex w-full my-0 mx-auto ">
+        <div class="  w-full max-w-[1220px] relative my-0 mx-auto">
+            <div class="w-full h-[60px] bg-slate-100 flex items-center justify-between">
+                <div class="flex items-center">
 
-            </div>
+                    <button class=" flex flex-col gap-[8px]" id="open-nav">
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                    </button>
 
+                    <h2 class="font-['Cormorant_Garamond'] lg:flex hidden ml-2 font-bold text-[45px]"><a
+                            href="landingpage.html">Artikel</a>
+                    </h2>
 
-            <div class=" flex items-center justify-end">
-                <button
-                    class="loginButton font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
-                        href="Account.html">
-                        Account
-                    </a>
+                </div>
+                <h2 class="font-['Cormorant_Garamond'] lg:hidden   font-bold text-[45px]"><a
+                        href="landingpage.html">Artikel</a>
+                </h2>
+                <input
+                    class="h-[33px] w-2/5 rounded-full  sm:300px hidden lg:flex focus:outline-none px-[20px] border-[1.5px] border-current	"
+                    placeholder="search">
 
-                </button>
+                <div class="flex items-center justify-end">
+                    <button
+                        class="loginButton lg:flex hidden  font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
+                            href="login.html">LOG IN</a>
 
+                    </button>
+
+                    <img class="absolute  lg:hidden flex right-6 h-[28px] mr-2" src="iconassets/search.svg">
+                    <img class="absolute lg:hidden flex h-[28px]" src="iconassets/user.svg">
+                </div>
             </div>
 
         </div>
 
     </div>
 
-    <div class="bookmarkContainer ">
+    <div class="flex w-full mx-0 my-auto">
+        <div class="hidden lg:flex w-full max-w-[1250px] my-0 mx-auto p-[15px] items-center justify-between">
+            <div class=" w-full flex flex-row justify-between ">
+
+                <p class="font-['Inter']"> PAGI, PEKAN BARU 25 ‘ C</p>
+
+                <ul class="flex gap-[20px] items-center font text-[14px] ">
+                    <li><a href="Homepage.html">INDONESIA</a></li>
+                    <li><a href="#">EKONOMI</a></li>
+                    <li><a href="#">PENDIDIKAN</a></li>
+                    <li><a href="secondPage.html">POLITIK</a></li>
+                    <li><a href="#">SCIENCE</a></li>
+                    <li><a href="#">SPORT</a></li>
+                </ul>
+
+
+
+
+                <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="flex w-full my-0 mx-auto ">
+        <div class="w-full my-0 mx-auto p-[15px] items-center justify-between hidden max-[1024px]:flex ">
+            <div class=" flex flex-row justify-center w-full">
+
+
+                <p class="font-['Inter']">PAGI, PEKAN BARU 25 ‘ C</p>
+                <span class="mx-[10px]">&#183; </span>
+                <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="max-w-[1250px] w-full p-[15px] mt-[40px] my-0 mx-auto">
         <div class="border-b-[1px] border-black mb-6">
 
 
@@ -126,9 +180,9 @@
 
 
 
-        <div class="bookmarkContent">
+        <div class="grid grid-cols-[700px,1fr] gap-[20px]">
             <div class=" flex flex-col ">
-                <div class="contentA pb-[20px] border-black border-b-[1px]">
+                <div class=" pb-[20px] border-black border-b-[1px]">
                     <h4 class="font-[inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8 ">
                         French protests
                         intensify
@@ -165,7 +219,7 @@
 
                 </div>
 
-                <div class="contentA pb-[20px] border-black border-b-[1px]">
+                <div class=" pb-[20px] border-black border-b-[1px]">
                     <h4 class="font-[inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8 ">
                         French protests
                         intensify
@@ -202,7 +256,7 @@
 
                 </div>
 
-                <div class="contentA pb-[20px] border-black border-b-[1px]">
+                <div class=" pb-[20px] border-black border-b-[1px]">
                     <h4 class="font-[inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8 ">
                         French protests
                         intensify
@@ -239,7 +293,7 @@
 
                 </div>
 
-                <div class="contentA pb-[20px] border-black border-b-[1px]">
+                <div class=" pb-[20px] border-black border-b-[1px]">
                     <h4 class="font-[inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8 ">
                         French protests
                         intensify
@@ -276,7 +330,7 @@
 
                 </div>
 
-                <div class="contentA pb-[20px] border-black border-b-[1px]">
+                <div class=" pb-[20px] border-black border-b-[1px]">
                     <h4 class="font-[inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8 ">
                         French protests
                         intensify
