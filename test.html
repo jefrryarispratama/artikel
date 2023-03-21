@@ -21,121 +21,524 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
     <link rel="stylesheet" href="homepage.css">
 
+    <style>
+        .sidenav {
+            height: 100%;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .dropdown-btn {
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+            font-weight: bold;
+        }
+
+        .sidenav a {
+            text-decoration: none;
+            font-size: 13px;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+
+
+        /* Main content */
+
+        .dropdown-container {
+            display: none;
+        }
+    </style>
+
 
 
 </head>
- 
+
 <body class="overflow-x-hidden">
     <!-- 
-    bagian atas tidak perlu responsive -->
+        bagian atas tidak perlu responsive -->
 
 
-    <!-- bagian atas sudah di perbaiki -->
+    <div class="relative flex w-full my-0 mx-auto ">
+        <div class="  w-full max-w-[1220px] relative my-0 mx-auto">
+            <div class="w-full h-[60px] flex items-center justify-between">
+                <div class="flex items-center">
 
-    <div class="flex flex-col  min-w-[380px] flex sm:hidden  w-full my-0 mx-auto p-[15px] mt-[40px] ">
+                    <button class=" flex flex-col gap-[8px]" id="open-nav">
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                    </button>
 
-        <!-- ------------------------------------------------------------------------content pertama----------------------------------------- -->
-        <div class="flex flex-col border-black border-b-[1px] pb-5  ">
-            <div>
-
-                <div class=" max-w-full w-11/12	 mx-auto my-0 h-full justify justify-items-center	">
-                    <img class=" w-[95%] h-[200px] object-cover object-center mx-auto mb-[3px]
-                    min-[400px]:h-[250px]
-                    min-[550px]:h-[300px]
-                    " src="assets/pexels-brotin-biswas-518543.jpg">
-
-                    <div class="flex flex-col text-center px-[23px]">
-                        <h4 class="font-[Inter] text-[28px] font-bold text-[#064025] mb-[18px] leading-8 ">
-                            Videos
-                            Contradict Initial Police Report on Tyre Nichols Arrest
-                        </h4>
-
-                        <p class="font-[Lato] mb-[60px]  leading-6">
-                            The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
-                            an
-                            officer’s gun. But videos from the scene refute that account.
-
-                        </p>
-
-                    </div>
-
-
+                    <h2 class="font-['Cormorant_Garamond'] lg:flex hidden ml-2 font-bold text-[45px]"><a
+                            href="landingpage.html">Artikel</a>
+                    </h2>
 
                 </div>
+                <h2 class="font-['Cormorant_Garamond'] lg:hidden   font-bold text-[45px]"><a
+                        href="landingpage.html">Artikel</a>
+                </h2>
+                <input
+                    class="h-[33px] w-2/5 rounded-full  sm:300px hidden lg:flex focus:outline-none px-[20px] border-[1.5px] border-current	"
+                    placeholder="search">
 
-                <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8 "> <a
-                        href="readingPage.html">French protests
-                        intensify
-                        against
-                        pension age
-                        rise</a>
+                <div class="flex items-center justify-end">
+                    <button
+                        class="loginButton lg:flex hidden  font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
+                            href="login.html">LOG IN</a>
 
-                </h4>
+                    </button>
 
-                <p class="font-[Lato] mb-[60px] text-center  leading-6">The police said Mr. Nichols refused to obey directions,
-                    “started to
-                    fight” and
-                    reached for an
-                    officer’s gun. But videos from the scene refute that account.
-                </p>
-
-                <div class="border-black border-b-[1px] mb-[15px]"></div>
-
-                <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8">
-                    Videos Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-
-
-                <p class="font-[Lato] mb-[60px] text-center ">
-                    The police said Mr. Nichols refused to obey directions, “started to
-                    fight” and reached for an officer’s gun. But videos from the scene refute that account.
-                </p>
-
+                    <img class="absolute  lg:hidden flex right-6 h-[28px] mr-2" src="iconassets/search.svg">
+                    <img class="absolute lg:hidden flex h-[28px]" src="iconassets/user.svg">
+                </div>
             </div>
 
+        </div>
 
-            <div>
-                <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] text-left mb-[18px] leading-8">
-                    French
-                    protests
-                    intensify against
-                    pension age
-                    rise
-                </h4>
+    </div>
+
+    <div class="flex w-full mx-0 my-auto">
+        <div class="hidden lg:flex w-full max-w-[1250px] my-0 mx-auto p-[15px] items-center justify-between">
+            <div class=" w-full flex flex-row justify-between ">
+
+                <p class="font-['Inter']"> PAGI, PEKAN BARU 25 ‘ C</p>
+
+                <ul class="flex gap-[20px] items-center font text-[14px] ">
+                    <li><a href="Homepage.html">INDONESIA</a></li>
+                    <li><a href="#">EKONOMI</a></li>
+                    <li><a href="#">PENDIDIKAN</a></li>
+                    <li><a href="secondPage.html">POLITIK</a></li>
+                    <li><a href="#">SCIENCE</a></li>
+                    <li><a href="#">SPORT</a></li>
+                </ul>
 
 
-                <p class="font-[Lato] mb-[60px] text-center ">The police said Mr. Nichols refused to obey directions, “started to
-                    fight” and
-                    reached for an
-                    officer’s gun. But videos from the scene refute that account.
-                </p>
 
-                <div class="border-black border-b-[1px] mb-[15px]"></div>
-                <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8">Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
 
-                <p class="font-[Lato] mb-[60px] text-center ">The police said Mr. Nichols refused to obey directions, “started to
-                    fight” and reached for an officer’s gun. But videos from the scene refute that account. </p>
+                <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
+
             </div>
-
-
-
 
 
         </div>
 
-        <!-- --------------------------konten kedua----------------------------- -->
+    </div>
+
+    <div class="flex w-full my-0 mx-auto ">
+        <div class="w-full my-0 mx-auto p-[15px] items-center justify-between hidden max-[1024px]:flex ">
+            <div class="flex flex-row justify-center w-full min-[360px]:text-[12px]">
 
 
+                <p class="font-['Inter']">PAGI, PEKAN BARU 25 ‘ C</p>
+                <span class="mx-[10px]">&#183; </span>
+                <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
 
+            </div>
+
+
+        </div>
 
     </div>
 
 
 
+    <!-- bagian atas sudah di perbaiki -->
 
-    <script src="HiddenContent.js"></script>
+    <div class="flex flex-col min-w-[320px] flex sm:hidden w-full my-0 mx-auto p-[15px] mt-[40px] 
+        min-[320px]:mt-[0px] ">
+
+        <!-- ------------------------------------------------------------------------content pertama----------------------------------------- -->
+
+
+        <div class=" max-w-full w-11/12	 mx-auto my-0 h-full justify justify-items-center ">
+            <img class=" w-[100%] h-[200px] object-cover object-center mx-auto mb-[3px]
+                        min-[400px]:h-[240px]
+                        min-[550px]:h-[300px]
+                        " src="assets/pexels-brotin-biswas-518543.jpg">
+
+            <div class="flex flex-col text-center px-[23px]">
+                <h4 class="font-[Inter] text-[28px] font-bold text-[#064025] mb-[18px] leading-8 ">
+                    Videos
+                    Contradict Initial Police Report on Tyre Nichols Arrest
+                </h4>
+
+                <p class="font-[Lato] mb-[60px]  leading-6">
+                    The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
+                    an
+                    officer’s gun. But videos from the scene refute that account.
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="border-black border-b-[1px] mb-[15px]"></div>
+
+        <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8 "> <a
+                href="readingPage.html">French protests
+                intensify
+                against
+                pension age
+                rise</a>
+
+        </h4>
+
+        <p class="font-[Lato] mb-[60px] text-center  leading-6">The police said Mr. Nichols refused to obey
+            directions,
+            “started to
+            fight” and
+            reached for an
+            officer’s gun. But videos from the scene refute that account.
+        </p>
+
+        <div class="border-black border-b-[1px] mb-[15px]"></div>
+
+        <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8">
+            Videos Contradict Initial Police Report on Tyre Nichols Arrest
+        </h4>
+
+
+        <p class="font-[Lato] mb-[60px] text-center ">
+            The police said Mr. Nichols refused to obey directions, “started to
+            fight” and reached for an officer’s gun. But videos from the scene refute that account.
+        </p>
+
+
+
+        <div class="border-black border-b-[1px] mb-[15px]"></div>
+
+
+        <div>
+            <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] text-left mb-[18px] leading-8">
+                French
+                protests
+                intensify against
+                pension age
+                rise
+            </h4>
+
+
+            <p class="font-[Lato] mb-[60px] text-center ">The police said Mr. Nichols refused to obey directions,
+                “started to
+                fight” and
+                reached for an
+                officer’s gun. But videos from the scene refute that account.
+            </p>
+
+            <div class="border-black border-b-[1px] mb-[15px]"></div>
+            <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8">Videos
+                Contradict Initial Police Report on Tyre Nichols Arrest
+            </h4>
+
+            <p class="font-[Lato] mb-[60px] text-center ">The police said Mr. Nichols refused to obey directions,
+                “started to
+                fight” and reached for an officer’s gun. But videos from the scene refute that account. </p>
+        </div>
+
+        <!-- ------------------------------------------------------------------------content pertama----------------------------------------- -->
+
+
+
+        <!-- --------------------------konten kedua----------------------------- -->
+
+        <div class="max-w-full w-11/12	 mx-auto my-0 h-full justify justify-items-center text-center mb-5 mt-5">
+            <img class=" w-[100%] h-[200px] object-cover object-center mb-[10px]  
+                    min-[400px]:h-[250px]
+                    min-[550px]:h-[300px]" src="assets/pexels-william-choquette-1954524.jpg">
+
+            <h4 class="font-[Inter] text-[28px] font-bold text-[#064025] mb-[18px] leading-8">Videos
+                Contradict Initial Police Report on Tyre Nichols Arrest
+            </h4>
+
+            <p class="font-[Lato]">
+                The police said Mr. Nichols refused to obey directions, “started to fight” and reached for an
+                officer’s gun. But videos from the scene refute that account.
+
+            </p>
+        </div>
+
+
+        <div class="max-w-full w-11/12	 mx-auto my-0 h-full justify justify-items-center text-center mb-5">
+            <img class="w-[100%] h-[200px] object-cover object-center mb-[10px]  
+                min-[400px]:h-[250px]
+                min-[550px]:h-[300px]" src="assets/pexels-victor-freitas-841135.jpg">
+
+            <h4 class="font-[Inter] text-[24px] font-bold text-[#064025] mb-[18px] leading-8">Taiwan
+                parrot
+                incident: Owner fined $90k after bird injures doctor
+            </h4>
+
+
+            <p class="font-[Lato]">
+                The police said Mr. Nichols refused to obey directions, “started to fight” and reached for an
+                officer’s gun. But videos from the scene refute that account.
+
+            </p>
+
+        </div>
+
+
+        <div class="max-w-full w-11/12	 mx-auto my-0 h-full justify justify-items-center text-center mb-5">
+            <img class="w-[100%] h-[200px] object-cover object-center mb-[10px]  
+                min-[400px]:h-[250px]
+                min-[550px]:h-[300px]" src="assets/pexels-victor-freitas-841135.jpg">
+
+            <h4 class="font-[Inter] text-[24px] font-bold text-[#064025] mb-[18px] leading-8">Taiwan
+                parrot
+                incident: Owner fined $90k after bird injures doctor
+            </h4>
+
+
+            <p class="font-[Lato]">
+                The police said Mr. Nichols refused to obey directions, “started to fight” and reached for an
+                officer’s gun. But videos from the scene refute that account.
+
+            </p>
+
+        </div>
+
+        <!-- --------------------------konten kedua----------------------------- -->
+
+        <!--------------------------- konten ke tiga ------------------------------------>
+
+        <div class=" max-w-full w-11/12	 mx-auto my-0 h-full justify justify-items-center ">
+            <img class=" w-[100%] h-[200px] object-cover object-center mx-auto mb-[3px]
+                        min-[400px]:h-[240px]
+                        min-[550px]:h-[300px]
+                        " src="assets/pexels-brotin-biswas-518543.jpg">
+
+            <div class="flex flex-col text-center px-[23px]">
+                <h4 class="font-[Inter] text-[28px] font-bold text-[#064025] mb-[18px] leading-8 ">
+                    Videos
+                    Contradict Initial Police Report on Tyre Nichols Arrest
+                </h4>
+
+            </div>
+        </div>
+
+        <div class="border-black border-b-[1px] mb-[15px]"></div>
+
+        <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8 "> <a
+                href="readingPage.html">French protests
+                intensify
+                against
+                pension age
+                rise</a>
+
+        </h4>
+
+        <div class="border-black border-b-[1px] mb-[15px]"></div>
+
+        <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8">
+            Videos Contradict Initial Police Report on Tyre Nichols Arrest
+        </h4>
+
+
+        <div class="border-black border-b-[1px] mb-[15px]"></div>
+
+        <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] text-left mb-[18px] leading-8">
+            French
+            protests
+            intensify against
+            pension age
+            rise
+        </h4>
+
+
+        <div class="border-black border-b-[1px] mb-[15px]"></div>
+        <h4 class="font-[Inter] text-[27px] text-center font-bold text-[#064025] mb-[18px] leading-8">Videos
+            Contradict Initial Police Report on Tyre Nichols Arrest
+        </h4>
+
+
+
+        <!--------------------------- konten ke tiga ------------------------------------>
+
+        <!-------------------------------- konten ke 4-------------------------------- -->
+
+        <div class=" max-w-full w-11/12	 mx-auto my-0 h-full justify justify-items-center ">
+            <img class=" w-[100%] h-[200px] object-cover object-center mx-auto mb-[3px]
+                    min-[400px]:h-[240px]
+                    min-[550px]:h-[300px]
+                    " src="assets/pexels-brotin-biswas-518543.jpg">
+
+            <div class="flex flex-col text-center px-[23px] mb-5">
+                <h4 class="font-[Inter] text-[28px] font-bold text-[#064025] mb-[18px] leading-8 ">
+                    Videos
+                    Contradict Initial Police Report on Tyre Nichols Arrest
+                </h4>
+
+                <p class="font-[Lato]">
+                    The police said Mr. Nichols refused to obey directions, “started to fight” and reached for an
+                    officer’s gun. But videos from the scene refute that account.
+
+                </p>
+
+
+            </div>
+
+            <img class=" w-[100%] h-[200px] object-cover object-center mx-auto mb-[3px]
+                    min-[400px]:h-[240px]
+                    min-[550px]:h-[300px]
+                    " src="assets/pexels-brotin-biswas-518543.jpg">
+
+            <div class="flex flex-col text-center px-[23px] mb-5">
+                <h4 class="font-[Inter] text-[28px] font-bold text-[#064025] mb-[18px] leading-8 ">
+                    Videos
+                    Contradict Initial Police Report on Tyre Nichols Arrest
+                </h4>
+
+                <p class="font-[Lato]">
+                    The police said Mr. Nichols refused to obey directions, “started to fight” and reached for an
+                    officer’s gun. But videos from the scene refute that account.
+
+                </p>
+
+
+            </div>
+
+            <img class=" w-[100%] h-[200px] object-cover object-center mx-auto mb-[3px]
+                    min-[400px]:h-[240px]
+                    min-[550px]:h-[300px]
+                    " src="assets/pexels-brotin-biswas-518543.jpg">
+
+            <div class="flex flex-col text-center px-[23px] mb-5">
+                <h4 class="font-[Inter] text-[28px] font-bold text-[#064025] mb-[18px] leading-8 ">
+                    Videos
+                    Contradict Initial Police Report on Tyre Nichols Arrest
+                </h4>
+
+                <p class="font-[Lato]">
+                    The police said Mr. Nichols refused to obey directions, “started to fight” and reached for an
+                    officer’s gun. But videos from the scene refute that account.
+
+                </p>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-------------------------------- konten 4 ----------------------------->
+
+
+    <footer>
+        <div class=" bg-black h-full mt-[30px] max-w-[639px] sm:hidden mx-auto my-0 pb-5">
+
+
+            <div class="flex flex-col text-white p-[15px]">
+
+                <h4 class="font-['Cormorant_Garamond'] font-bold text-[40px] text-center">
+                    Artikel
+                </h4>
+
+                <div class="sidenav font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn">Category</button>
+                    <div class="dropdown-container">
+
+                        <div class="flex flex-row gap-[80px]">
+
+                            <div>
+
+                                <a href="#">Indonesia</a>
+                                <a href="#">Pendidikan</a>
+                            </div>
+
+                            <div>
+
+                                <a href="#">Science</a>
+                                <a href="#">Politik</a>
+                            </div>
+
+                            <div>
+                                <a href="#">Ekonomi</a>
+                                <a href="#">Sport</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="sidenav font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn">About</button>
+                    <div class="dropdown-container">
+
+                        <div class="flex flex-col">
+
+                            <a href="#">Tentang Artikel</a>
+                            <a href="#">Hubungi</a>
+                            <a href="#">Admin</a>
+                            
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="sidenav font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px] mb-5">
+                    <button class="dropdown-btn">Follow Us</button>
+                    <div class="dropdown-container">
+
+                        <div class="flex flex-col">
+
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Tiktok</a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <span class="font-[Lato] text-[10px] text-center h-[70px]">
+                    2023 Artikel - All Copyright Reserved
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+    <!-- <script src="HiddenContent.js"></script> -->
     <script>
         document.getElementById('open-nav').addEventListener('click', function () {
             document.getElementById('side-navigation').classList.remove('hide');
@@ -143,6 +546,24 @@
         document.getElementById('close-nav').addEventListener('click', function () {
             document.getElementById('side-navigation').classList.add('hide');
         });
+    </script>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
     </script>
 
 
