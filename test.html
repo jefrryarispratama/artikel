@@ -20,62 +20,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
     <link rel="stylesheet" href="homepage.css">
-
-    <style>
-        .sidenav {
-            height: 100%;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #000;
-            color: white;
-            padding-top: 20px;
-        }
-
-        .dropdown-btn {
-            text-decoration: none;
-            font-size: 17px;
-            display: block;
-            border: none;
-            background: none;
-            width: 100%;
-            text-align: left;
-            cursor: pointer;
-            outline: none;
-            font-weight: bold;
-        }
-
-        .sidenav a {
-            text-decoration: none;
-            font-size: 13px;
-            display: block;
-            border: none;
-            background: none;
-            width: 100%;
-            text-align: left;
-            cursor: pointer;
-            outline: none;
-        }
-
-
-
-        /* Main content */
-
-        .dropdown-container {
-            display: none;
-        }
-    </style>
-
-
-
 </head>
 
-<body class="overflow-x-hidden">
+<body>
     <!-- 
         bagian atas tidak perlu responsive -->
 
 
-    <div class="relative flex w-full my-0 mx-auto ">
+    <div class="relative flex w-full my-0 mx-auto pl-2 pr-2">
         <div class="  w-full max-w-[1220px] relative my-0 mx-auto">
             <div class="w-full h-[60px] flex items-center justify-between">
                 <div class="flex items-center">
@@ -143,7 +95,7 @@
 
     <div class="flex w-full my-0 mx-auto ">
         <div class="w-full my-0 mx-auto p-[15px] items-center justify-between hidden max-[1024px]:flex ">
-            <div class="flex flex-row justify-center w-full min-[360px]:text-[12px]">
+            <div class="flex flex-row justify-center w-full min-[360px]:text-[13px]">
 
 
                 <p class="font-['Inter']">PAGI, PEKAN BARU 25 ‘ C</p>
@@ -452,27 +404,34 @@
                     Artikel
                 </h4>
 
-                <div class="sidenav font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
-                    <button class="dropdown-btn">Category</button>
-                    <div class="dropdown-container">
+                <div
+                    class="h-full z-10 top-0 left-0 bg-black text-white pt-[20px] font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn font-bold">Category</button>
+                    <div class="hidden">
 
-                        <div class="flex flex-row gap-[80px]">
+                        <div class="flex flex-row gap-[80px] font-[lato]">
 
                             <div>
 
-                                <a href="#">Indonesia</a>
-                                <a href="#">Pendidikan</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Indonesia</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Pendidikan</a>
                             </div>
 
                             <div>
 
-                                <a href="#">Science</a>
-                                <a href="#">Politik</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Science</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Politik</a>
                             </div>
 
                             <div>
-                                <a href="#">Ekonomi</a>
-                                <a href="#">Sport</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Ekonomi</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Sport</a>
 
                             </div>
 
@@ -485,16 +444,19 @@
 
 
 
-                <div class="sidenav font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
-                    <button class="dropdown-btn">About</button>
-                    <div class="dropdown-container">
+                <div class=" font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn font-bold">About</button>
+                    <div class="hidden">
 
                         <div class="flex flex-col">
 
-                            <a href="#">Tentang Artikel</a>
-                            <a href="#">Hubungi</a>
-                            <a href="#">Admin</a>
-                            
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Tentang Artikel</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Hubungi</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Admin</a>
+
 
                         </div>
 
@@ -504,15 +466,18 @@
                 </div>
 
 
-                <div class="sidenav font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px] mb-5">
-                    <button class="dropdown-btn">Follow Us</button>
-                    <div class="dropdown-container">
+                <div class=" font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px] mb-5">
+                    <button class="dropdown-btn font-bold">Follow Us</button>
+                    <div class="hidden">
 
                         <div class="flex flex-col">
 
-                            <a href="#">Instagram</a>
-                            <a href="#">Facebook</a>
-                            <a href="#">Tiktok</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Instagram</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Facebook</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Tiktok</a>
 
                         </div>
 
