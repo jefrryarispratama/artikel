@@ -34,34 +34,40 @@
 
 <body class="m-0 p-0">
     <header>
-        <div class="flex items-center justify-between px-5 border-black border-b-[1px] mb-[60px]">
+        <div class="flex items-center justify-between px-5 border-black border-b-[1px] mb-[60px] ">
             <div>
-                <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px]">
+                <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px]
+                max-[1024px]:text-[30px]">
                     Artikel | Admin
                 </h2>
             </div>
 
-            <div class="flex flex-row p-[26px]	">
+            <div class="flex flex-row p-[26px]	hidden lg:flex">
                 <button class="mr-[5px]">
-                    <span>
-                        Willson Andrew
+                    <span><a href="login.html">
+
+                            Willson Andrew
+                        </a>
                     </span>
                 </button>
 
                 <button>
                     <img class="w-[20px] mt-[4px]" src="iconassets/chevron-down.svg ">
                 </button>
+
             </div>
+
+            <img class=" lg:hidden flex h-[28px]" src="iconassets/user.svg">
 
 
         </div>
     </header>
 
-    <div class="flex max-w-[900px] mx-auto my-0">
-        <div class="grid grid-cols-[250px,700px] gap-[50px]">
+    <div class="max-w-[900px] mx-auto my-0">
+        <div class="grid grid-cols-[1fr] lg:grid-cols-[250px,700px] gap-[50px]">
             <div class=" flex flex-col">
                 <div style="position: sticky; top: 0">
-                    <div class="leftSide">
+                    <div class="flex lg:block gap-5 justify-center">
                         <div class="flex flex-col gap-5  pb-7">
                             <p class="pl-2 font-[Lato] text-[20px] font-normal"><a href="adminAccount.html">Admin</a>
                             </p>
@@ -72,7 +78,7 @@
                                     href="newsList.html">Berita</a></p>
                         </div>
 
-                        <div class="flex flex-col gap-5 border-black border-b-[1px] pb-7">
+                        <div class="flex flex-col gap-5 pb-7">
                             <p class=" pl-2 font-[Lato] text-[20px] font-normal"><a href="addNews.html">Tambah
                                     Berita</a>
                             </p>
@@ -85,7 +91,7 @@
             </div>
 
 
-            <div class=" rightSide ">
+            <div class="p-5">
                 <div class="flex justify-between mb-[1cm] mx-[5px]">
                     <div class="flex">
                         <input

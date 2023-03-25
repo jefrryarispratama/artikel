@@ -11,26 +11,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="Account.css">
 </head>
 
 <body class="m-0 p-0">
     <header>
-        <div class="flex items-center justify-between px-5 border-black border-b-[1px] mb-[60px]">
+        <div class="flex items-center justify-between px-5 border-black border-b-[1px] mb-[60px] ">
             <div>
-                <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px]">
+                <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px]
+                max-[1024px]:text-[30px]">
                     Artikel | Admin
                 </h2>
             </div>
 
-            <div class="flex flex-row p-[26px]	">
+            <div class="flex flex-row p-[26px]	hidden lg:flex">
                 <button class="mr-[5px]">
                     <span><a href="login.html">
 
@@ -42,19 +41,22 @@
                 <button>
                     <img class="w-[20px] mt-[4px]" src="iconassets/chevron-down.svg ">
                 </button>
+
             </div>
+
+            <img class=" lg:hidden flex h-[28px]" src="iconassets/user.svg">
 
 
         </div>
     </header>
 
-    <div class="flex max-w-[900px] mx-auto my-0">
-        <div class="grid grid-cols-[200px,500px]">
+    <div class="max-w-[900px] mx-auto my-0 ">
+        <div class="grid grid-cols-[1fr] lg:grid-cols-[250px,700px] gap-[50px] ">
             <div class=" flex flex-col">
                 <div style="position: sticky; top: 0">
-                    <div class="leftSide">
+                    <div class="leftSide flex gap-3 justify-center lg:block">
                         <div class="flex flex-col gap-5  pb-7">
-                            <p class="pl-2 font-[Lato] text-[20px]  border-black border-l-[2px] pl-2 font-bold">
+                            <p class="border-black border-l-[2px] pl-2 font-[Lato] text-[20px] font-bold">
                                 Admin</p>
                         </div>
 
@@ -62,7 +64,7 @@
                             <p class=" pl-2 font-[Lato] text-[20px] font-normal"><a href="newsList.html">Berita</a></p>
                         </div>
 
-                        <div class="flex flex-col gap-5 border-black border-b-[1px] pb-7">
+                        <div class="flex flex-col gap-5 pb-7">
                             <p class=" font-[Lato] text-[20px] font-normal "><a href="addNews.html">Tambah Berita</a>
                             </p>
                         </div>
@@ -74,7 +76,7 @@
             </div>
 
 
-            <div>
+            <div class="p-5">
                 <div class="leading-9 pb-[40px] border-black border-b-[2.5px] mb-5">
                     <h4 class="font-[Inter] text-[40px] font-medium text-[#064025]">Selamat Siang.</h4>
                     <p class="font-[Lato] text-[16px]">Ini merupakan profil akunmu yang telah dibuat sejak 2023.</p>
@@ -101,7 +103,7 @@
 
                         <div class="flex flex-row justify-between">
                             <span class="font-bold">Password</span>
-                            <span>Bakhmut </span>
+                            <span>Update</span>
                         </div>
                         <span>None</span>
                     </div>
