@@ -85,7 +85,6 @@
 
 
                     <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
-
                 </div>
 
 
@@ -111,7 +110,7 @@
     </header>
 
     <div class="mx-auto my-0 max-w-[1250px] w-full p-[15px] mt-[40px]">
-        <div class="grid grid-cols-[1fr,1fr]">
+        <div class="grid-rows-[1fr,1fr] md:grid-rows-[1fr] grid md:grid-cols-[1fr,1fr] ">
             <div class=" bg-black  px-[130px] py-[200px]">
                 <p class="text-white text-justify">Artikel merupakan salah satu website berita yang kami rancang dengan
                     mengutamakan
@@ -125,9 +124,11 @@
 
         </div>
 
-        <div class="grid grid-cols-[300px,1fr,300px]">
-            <div class="bg-[#F0E7E2] py-[6cm] bottom-0 flex justify-center items-center  ">
-                <p class="rotate-[270deg] inline-block text-[50px] font-bold font-[lato]">About Us </p>
+        <div
+            class="grid grid-rows-[300px,1fr,300px]  grid-cols-[1fr] lg:grid-rows-[1fr] lg:grid-cols-[300px,1fr,300px]">
+            <div class="bg-[#F0E7E2] lg:py-[6cm] bottom-0 flex justify-center items-center  ">
+                <p class="rotate-0 lg:rotate-[270deg] inline-block text-[50px] font-bold font-[lato]    
+                 ">About Us </p>
             </div>
             <div class="bg-white py-[150px] px-[120px] py-[200px] text-justify">
                 Halo teman-teman Saya Jefrry Arispratama selaku Perwakilan Kelompok 5 2SIMD Mengucapkan terima kasih
@@ -144,8 +145,8 @@
 
         </div>
 
-        <div class="grid grid-cols-[700px,1fr]">
-            <div class=" bg-bottom bg-cover bg-no-repeat   bg-[url('assets/26786.png')]">
+        <div class="grid grid-rows-[700px,1fr] lg:grid-cols-[700px,1fr] grid-cols-[1fr] lg:grid-rows-[1fr]">
+            <div class=" bg-bottom bg-cover bg-no-repeat bg-[url('assets/26786.png')]">
 
             </div>
 
@@ -159,7 +160,7 @@
 
         </div>
 
-        <div class="grid grid-cols-[1fr,700px]">
+        <div class="grid grid-rows-[1fr,700px] lg:grid-cols-[700px,1fr] grid-cols-[1fr] lg:grid-rows-[1fr]">
             <div class=" bg-[#16252B]  px-[100px] py-[100px]">
                 <p class="text-white text-justify">Artikel merupakan salah satu website berita yang kami rancang dengan
                     mengutamakan
@@ -177,16 +178,121 @@
 
     </div>
 
-    <footer>
-        <div class="bg-black">
-            <div class="flex flex-col max-w-[1220px] mx-auto my-0 justify-center h-[400px] items-center">
-                <div class="grid grid-cols-[800px,1fr,1fr,1fr] text-white">
-                    <div class=" flex flex-col h-[200px] border-white border-r-[1px] px-[10px]">
-                        <h4 class="font-['Cormorant_Garamond'] font-bold text-[60px]">
+    <footer class="block sm:hidden">
+        <div class=" bg-black h-full mt-[30px] max-w-[639px] sm:hidden mx-auto my-0 pb-5">
+
+
+            <div class="flex flex-col text-white p-[15px]">
+
+                <h4 class="font-['Cormorant_Garamond'] font-bold text-[40px] text-center">
+                    Artikel
+                </h4>
+
+                <div
+                    class="h-full z-10 top-0 left-0 bg-black text-white pt-[20px] font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn font-bold">Category</button>
+                    <div class="hidden">
+
+                        <div class="flex flex-row gap-[80px] font-[lato]">
+
+                            <div>
+
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Indonesia</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Pendidikan</a>
+                            </div>
+
+                            <div>
+
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Science</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Politik</a>
+                            </div>
+
+                            <div>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Ekonomi</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Sport</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class=" font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn font-bold">About</button>
+                    <div class="hidden">
+
+                        <div class="flex flex-col">
+
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Tentang Artikel</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Hubungi</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Admin</a>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class=" font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px] mb-5">
+                    <button class="dropdown-btn font-bold">Follow Us</button>
+                    <div class="hidden">
+
+                        <div class="flex flex-col">
+
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Instagram</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Facebook</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Tiktok</a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <span class="font-[Lato] text-[10px] text-center h-[70px]">
+                    2023 Artikel - All Copyright Reserved
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <footer class="hidden sm:block">
+        <div class=" bg-black mt-[30px]">
+            <div class=" flex flex-col my-0 mx-auto justify-center h-[400px] items-center">
+                <div class="grid grid-cols-[3fr,1fr,1fr,1fr] gap-[20px] text-white">
+                    <div class=" flex flex-col px-[10px] ">
+                        <h4 class="font-['Cormorant_Garamond'] font-bold text-[40px]">
                             Artikel
                         </h4>
 
-                        <span class="font-[Lato] text-[15px] w-[370px]  ">
+                        <span class="font-[Lato] text-[13px] w-[350px]  ">
                             website ini berisikan berita-berita seputar di indonesia dengan tampilan desain yang
                             menarik
                             dan
@@ -198,12 +304,12 @@
                         </span>
                     </div>
 
-                    <div class="px-[10px]">
-                        <p class="font-[Lato] text-[20px]">
+                    <div class="px-[5px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>Categories</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
+                        <div class="font-[Lato] text-[13px] flex flex-col">
                             <span>
                                 Indonesia
                             </span>
@@ -234,12 +340,12 @@
 
 
 
-                    <div class=" flex flex-col px-[10px]">
-                        <p class="font-[Lato] text-[20px]">
+                    <div class=" flex flex-col px-[5px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>Follow Us</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
+                        <div class="font-[Lato] text-[13px] flex flex-col">
                             <span>
                                 Instagram
                             </span>
@@ -256,20 +362,26 @@
                         </div>
                     </div>
 
-                    <div class="  px-[10px]">
+                    <div class="px-[5px]">
 
 
-                        <p class="font-[Lato] text-[20px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>About</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
-                            <span>
-                                About us
+                        <div class="font-[Lato] text-[14px] flex flex-col">
+                            <span><a href="aboutUs.html">About us</a>
+
                             </span>
 
                             <span>
                                 Contact
+                            </span>
+
+                            <span><a href="loginAdmin.html">
+
+                                    Admin
+                                </a>
                             </span>
                         </div>
 
@@ -283,7 +395,22 @@
 
     </footer>
 
-
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 

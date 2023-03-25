@@ -24,24 +24,35 @@
 <body class="m-0 p-0">
 
     <header>
-        <div class="flex items-center justify-between px-5 border-black border-b-[1px] mb-[60px]">
+        <div class="flex items-center justify-between px-5 border-black border-b-[1px] mb-[60px] ">
             <div>
-                <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px]"><a href="landingpage.html">Artikel</a>
-
+                <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px]
+                max-[1024px]:text-[40px]">
+                    Artikel | Admin
                 </h2>
             </div>
 
-            <div class="flex flex-row p-[26px]	">
+            <div class="flex flex-row p-[26px]	hidden lg:flex">
                 <button class="mr-[5px]">
                     <span><a href="login.html">
                             Willson Andrew
                         </a>
-
                     </span>
                 </button>
 
                 <button>
                     <img class="w-[20px] mt-[4px]" src="iconassets/chevron-down.svg ">
+                </button>
+
+            </div>
+
+            <div class="lg:hidden flex align-center">
+                <button>
+                    <img class="  h-[28px] mr-2" src="iconassets/help-circle.svg">
+                </button>
+
+                <button>
+                    <img class=" h-[28px]" src="iconassets/user.svg">
                 </button>
             </div>
 
@@ -49,16 +60,16 @@
         </div>
     </header>
 
-    <div class="flex max-w-[800px] mx-auto my-0">
-        <div class="grid grid grid-cols-[1fr,6fr] gap-[30px] ">
+    <div class=" max-w-[800px] mx-auto my-0">
+        <div class="grid grid-cols-[1fr] lg:grid-cols-[1fr,6fr] gap-[30px] px-5">
             <div class=" flex flex-col">
                 <div style="position: sticky; top: 0">
-                    <div class="leftSide">
-                        <div class="flex flex-col gap-5 border-black border-b-[1px] pb-7">
+                    <div class="flex  gap-3 justify-center lg:block">
+                        <div class="flex flex-col gap-5 pb-7">
                             <p class="border-black border-l-[2px] pl-2 font-[Lato] text-[20px] font-bold">Account</p>
                         </div>
 
-                        <div>
+                        <div class="hidden lg:block">
                             <h4>Hubungi Kami</h4>
                         </div>
 
