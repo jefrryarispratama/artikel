@@ -24,11 +24,11 @@
 </head>
 
 <body class="m-0 p-0">
-    <div class="max-w-[1220px] mx-auto my-0 px-[150px] py-0">
+    <div class="max-w-[1024px] px-5 mx-auto my-0 py-0">
 
 
         <p class="text-[12px] font-[lato]">Menunjukan hasil dari</p>
-        <div class="grid grid-cols-[1fr,200px] mb-9">
+        <div class="flex justify-between mb-9">
             <div class="  flex flex-col">
                 <input class="py-[10px] px-[5px] outline-none  text-[24px]" placeholder="search">
             </div>
@@ -41,89 +41,171 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-[100px,1fr,250px] gap-[15px] pb-2 mb-5 border-black border-b-[1px]">
+        <div class="grid grid-rows-[1fr] lg:grid-cols-[100px,1fr] gap-[15px] pb-2 mb-5 border-black border-b-[1px]">
             <div class="font-[inter] text-[12px]">
                 Maret. 6
             </div>
 
-            <div class=" px-[20px]">
+            <div>
                 <button
                     class=" px-[24px] py-[0.5] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
                     Politik
                 </button>
 
-                <div>
+                <div class="flex flex-row gap-3">
 
-                    <h4 class="font-[inter] text-[23px] font-bold text-[#064025] mb-[5px] leading-8">
-                        Videos Contradict Initial Police Report on Tyre Nichols Arrest
-                    </h4>
+                        <div >
 
-                    <p class="font-[lato] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-                        rem quis
-                        numquam reiciendis dolore nemo mollitia debitis pariatur, totam commodi nihil aliquid voluptate
-                        molestias quas velit libero quia? Nostrum, a.</p>
+                            <h4
+                                class="font-[inter] text-[17px] sm:text-[23px] font-bold text-[#064025] mb-[5px] leading-8">
+                                Videos Contradict Initial Police Report on Tyre Nichols Arrest
+                            </h4>
 
-                    <span class="font-[lato] text-[12px]">
-                        By Wilson Andrew &#183; March 20, 2023
+                            <p class="font-[lato] text-[13px] sm:text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cumque,
+                                rem quis
+                                numquam reiciendis dolore nemo mollitia debitis pariatur, totam commodi nihil aliquid
+                                voluptate
+                                molestias quas velit libero quia? Nostrum, a.</p>
 
-                    </span>
+                            <span class="font-[lato] text-[12px]">
+                                By Wilson Andrew &#183; March 20, 2023
+
+                            </span>
+                        </div>
+
+                        <div>
+                            <img class="w-[500px] lg:w-[600px] h-auto object-cover object-center"
+                                src="assets/pexels-brotin-biswas-518543.jpg">
+                        </div>
+                    
                 </div>
 
             </div>
 
-            <div>
-                <img class="w-[100%] h-auto object-cover object-center" src="assets/pexels-brotin-biswas-518543.jpg">
-            </div>
+
+
+
 
         </div>
 
-        <div class="grid grid-cols-[100px,1fr,250px] gap-[15px] pb-2 mb-5 border-black border-b-[1px]">
-            <div class="font-[inter] text-[12px]">
-                Maret. 6
-            </div>
-
-            <div class=" px-[20px]">
-                <button
-                    class=" px-[24px] py-[0.5] rounded-full bg-[#F2F1E9] font-[inter] hover:bg-[#fff] duration-[200ms]">
-                    Politik
-                </button>
-
-                <div>
-
-                    <h4 class="font-[inter] text-[23px] font-bold text-[#064025] mb-[5px] leading-8">
-                        Videos Contradict Initial Police Report on Tyre Nichols Arrest
-                    </h4>
-
-                    <p class="font-[lato] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-                        rem quis
-                        numquam reiciendis dolore nemo mollitia debitis pariatur, totam commodi nihil aliquid voluptate
-                        molestias quas velit libero quia? Nostrum, a.</p>
-
-                    <span class="font-[lato] text-[12px]">
-                        By Wilson Andrew &#183; March 20, 2023
-
-                    </span>
-                </div>
-
-            </div>
-
-            <div>
-                <img class="w-[100%] h-auto object-cover object-center" src="assets/pexels-brotin-biswas-518543.jpg">
-            </div>
-
-        </div>
     </div>
 
-    <footer>
-        <div class="bg-black h-full mt-[30px]">
-            <div class="flex flex-col max-w-[1220px] mx-auto my-0 justify-center h-[400px] items-center text-white">
-                <div class="grid grid-cols-[800px,1fr,1fr,1fr] gap-[20px]">
-                    <div class="contentA flex flex-col h-[200px] border-black border-r-[1px] px-[10px]">
-                        <h4 class="font-['Cormorant_Garamond'] font-bold text-[60px]">
+    <footer class="block sm:hidden">
+        <div class=" bg-black h-full mt-[30px] max-w-[639px] sm:hidden mx-auto my-0 pb-5">
+
+
+            <div class="flex flex-col text-white p-[15px]">
+
+                <h4 class="font-['Cormorant_Garamond'] font-bold text-[40px] text-center">
+                    Artikel
+                </h4>
+
+                <div
+                    class="h-full z-10 top-0 left-0 bg-black text-white pt-[20px] font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn font-bold">Category</button>
+                    <div class="hidden">
+
+                        <div class="flex flex-row gap-[80px] font-[lato]">
+
+                            <div>
+
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Indonesia</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Pendidikan</a>
+                            </div>
+
+                            <div>
+
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Science</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Politik</a>
+                            </div>
+
+                            <div>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Ekonomi</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Sport</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class=" font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn font-bold">About</button>
+                    <div class="hidden">
+
+                        <div class="flex flex-col">
+
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Tentang Artikel</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Hubungi</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Admin</a>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class=" font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px] mb-5">
+                    <button class="dropdown-btn font-bold">Follow Us</button>
+                    <div class="hidden">
+
+                        <div class="flex flex-col">
+
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Instagram</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Facebook</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Tiktok</a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <span class="font-[Lato] text-[10px] text-center h-[70px]">
+                    2023 Artikel - All Copyright Reserved
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <footer class="hidden sm:block">
+        <div class=" bg-black mt-[30px]">
+            <div class=" flex flex-col my-0 mx-auto justify-center h-[400px] items-center">
+                <div class="grid grid-cols-[3fr,1fr,1fr,1fr] gap-[20px] text-white">
+                    <div class=" flex flex-col px-[10px] ">
+                        <h4 class="font-['Cormorant_Garamond'] font-bold text-[40px]">
                             Artikel
                         </h4>
 
-                        <span class="font-[Lato] text-[15px] w-[370px]  ">
+                        <span class="font-[Lato] text-[13px] w-[350px]  ">
                             website ini berisikan berita-berita seputar di indonesia dengan tampilan desain yang
                             menarik
                             dan
@@ -135,12 +217,12 @@
                         </span>
                     </div>
 
-                    <div class="px-[10px]">
-                        <p class="font-[Lato] text-[20px]">
+                    <div class="px-[5px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>Categories</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
+                        <div class="font-[Lato] text-[13px] flex flex-col">
                             <span>
                                 Indonesia
                             </span>
@@ -171,12 +253,12 @@
 
 
 
-                    <div class=" flex flex-col px-[10px]">
-                        <p class="font-[Lato] text-[20px]">
+                    <div class=" flex flex-col px-[5px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>Follow Us</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
+                        <div class="font-[Lato] text-[13px] flex flex-col">
                             <span>
                                 Instagram
                             </span>
@@ -186,33 +268,33 @@
                             </span>
 
                             <span>
-                                Tiktok
+                                WhatsApp
                             </span>
 
 
                         </div>
                     </div>
 
-                    <div class="  px-[10px]">
+                    <div class="px-[5px]">
 
 
-                        <p class="font-[Lato] text-[20px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>About</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
-                            <span>
-                                About us
+                        <div class="font-[Lato] text-[14px] flex flex-col">
+                            <span><a href="aboutUs.html">About us</a>
+
                             </span>
 
                             <span>
                                 Contact
                             </span>
 
-                            <span><a href="adminAccount.html">
+                            <span><a href="loginAdmin.html">
+
                                     Admin
                                 </a>
-
                             </span>
                         </div>
 
