@@ -89,12 +89,15 @@
 
     <!-- <----->
 
-    <div id="commentTag" class="flex fixed right-0 h-full bg-white hideComment z-10">
-        <section class=" h-full border-black border-[0.1px] px-[50px] ">
+    <div id="commentTag" class="flex fixed right-0 h-full bg-white hideComment z-10 overflow-auto">
+        <section class=" h-full  px-[50px] ">
             <div class=" mb-3 pb-2 border-black border-b-[1px] flex justify-between items-center mt-5">
                 <h3 class="font-['Cormorant_Garamond'] font-[700] text-[35px] ">Comment</h3>
 
-                <img class="x-10 w-[35px]" src="iconassets/x.svg">
+                <button id="comment-exit">
+
+                    <img class="x-10 w-[35px]" src="iconassets/x.svg">
+                </button>
             </div>
 
             <div class=" flex flex-col pb-8 border-black border-b-[1px]">
@@ -107,7 +110,7 @@
                         Wilson Ganteng
                     </span>
                 </div>
-                <textarea id="expandingBox" class=" rounded-sm	p-2 drop-shadow-md w-[350px] mb-2 "
+                <textarea id="expandingBox" class=" rounded-sm	p-2 drop-shadow-md w-full mb-2 "
                     placeholder="What are your thoughts? "></textarea>
 
                 <div>
@@ -118,8 +121,70 @@
 
                 </div>
 
+
             </div>
 
+
+            <div class=" flex flex-row  pb-8 mt-5 items-start">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="flex items-center justify-center bg-black rounded-full w-[30px] h-[30px] text-white">
+                        W
+                    </span>
+                </div>
+
+                <div class="flex flex-col ml-2 ">
+                    <div class="flex items-end justify-between relative">
+                        <div>
+
+                            <span>
+                                Wilson cacad
+                            </span>
+
+                            <span class="text-[12px]">
+                                1 detik yang lalu
+                            </span>
+                        </div>
+
+                        <button id="delete-menu" class="opacity-100 border-0 w-[17px] ">
+                            <img class="m-0" src="iconassets/dots.png">
+                        </button>
+
+                        <button id="deleting-menu"
+                            class="hidden absolute bg-white top-0 right-5 px-5 py-1 border-black border-[1px]">
+                            delete
+                        </button>
+                    </div>
+
+
+                    <p class="w-[350px]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit saepe aperiam sequi
+                        consequatur modi ex id nam placeat distinctio, atque, molestiae, ad dicta! Quas cumque
+                        voluptate
+                        quae voluptatum quis!
+                    </p>
+
+                    <div class=" flex flex-col pb-8 border-black border-b-[1px] mt-5">
+
+                        <textarea class="autoresizing rounded-sm p-2 drop-shadow-md w-[350px] mb-2 "
+                            placeholder="Balas "></textarea>
+
+                        <div>
+                            <div id="commentBox"
+                                class="float-right border-[1px] border-black px-[20px] py-[5px] rounded-lg hover:bg-slate-50">
+                                Kirim
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
 
         </section>
     </div>
@@ -131,7 +196,7 @@
             <div class="w-full h-[60px] flex items-center justify-between">
                 <div class="flex items-center">
 
-                    <button class=" flex flex-col gap-[8px]" id="open-nav">
+                    <button class="opacity-100 border-0 flex flex-col gap-[8px]" id="open-nav">
                         <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
                         <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
                         <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
@@ -151,7 +216,7 @@
 
                 <div class="flex items-center justify-end">
                     <button
-                        class="loginButton lg:flex hidden  font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
+                        class="loginButton opacity-100 border-0 lg:flex hidden  font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
                             href="login.html">LOG IN</a>
 
                     </button>
@@ -248,7 +313,7 @@
         <img class="p-5 w-full h-[290px] sm:p-5 sm:w-full sm:h-[350px] md:w-[90%] md:h-[450px] lg:w-[80%] lg:h-[450px] object-cover object-center mb-[50px]"
             src="assets/pexels-brotin-biswas-518543.jpg ">
 
-        <div class=" w-[70%] h-full">
+        <div class=" w-[70%]  h-full">
             <p class="font-[Lato]  text-normal text-justify ">
                 Netflix’s new documentary, Pamela, a Love Story, is the second pop culture offering about Pamela
                 Anderson to emerge in our current moment of revisiting the tales of famous women of the ’90s and
@@ -299,7 +364,13 @@
                 against her will.
             </p>
 
+            <div class="border-black border-b-[1px] mt-[90px]">
+                
+            </div> 
+            
         </div>
+
+        
 
 
     </div>
@@ -652,20 +723,20 @@
 
     <!-- icon -->
     <!-- idnya diubah yang menu -->
-    <div class="menu hidden lg:block" id="slideIn">
+    <div style="transition:.5s; opacity: 0;" class="menu " id="slideIn">
         <div>
-            <button id="menu-3"><a href="bookmark.html">
+            <button class="iconfeature" id="menu-3"><a href="bookmark.html">
 
                     <img src="iconassets/bookmark.svg">
                 </a>
             </button>
-            <button id="menu-2">
+            <button class="iconfeature" id="menu-2">
                 <img src="iconassets/search.svg">
             </button>
-            <button id="menu-1">
+            <button class="iconfeature" id="menu-1">
                 <img src="iconassets/message-square.svg">
             </button>
-            <button onclick="ref()" style="opacity: 1;">
+            <button class="iconfeature" onclick="ref()" style="opacity: 1;">
                 <img src="iconassets/book-open.svg">
             </button>
         </div>
@@ -677,8 +748,6 @@
     <!-- small icon   -->
 
     <script src="iconfeature.js"></script>
-
-
 
     <script>
         document.getElementById('open-nav').addEventListener('click', function () {
@@ -703,7 +772,31 @@
             document.getElementById('slideIn').classList.toggle('sliding');
         });
 
+        textarea = document.querySelector(".autoresizing");
+        textarea.addEventListener('input', autoResize, false);
 
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }
+
+        document.getElementById('delete-menu').addEventListener('click', function () {
+            document.getElementById('deleting-menu').classList.toggle('hidden');
+        })
+
+        document.getElementById('comment-exit').addEventListener('click', function () {
+            document.getElementById('commentTag').classList.toggle('hideComment');
+            document.getElementById('slideIn').classList.toggle('sliding');
+        });
+
+        window.addEventListener("scroll", function (event) {
+            if (this.scrollY >= 600 && this.scrollY <= 1200) {
+                document.getElementById('slideIn').classList.add('showOn')
+            }
+            else {
+                document.getElementById('slideIn').classList.remove('showOn')
+            }
+        }, false);
     </script>
 </body>
 
