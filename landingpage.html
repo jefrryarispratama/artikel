@@ -28,7 +28,7 @@
 <body>
     <div class="flex">
         <section id="side-navigation"
-            class="hide w-[25%] h-full overflow-y-auto border-black border-[0.1px] fixed top-0 bg-white z-10">
+            class="hide w-full md:w-[40%] lg:w-[25%] h-full overflow-y-auto border-black border-[0.1px] fixed top-0 bg-white z-10">
 
             <button id="close-nav">
                 <img class="right-5 top-3 absolute h-[30px]" src="iconassets/x.svg">
@@ -86,39 +86,47 @@
 
     <!-- <-- -----------------  -->
 
+    <div class="relative flex w-full my-0 mx-auto ">
+        <div class="  w-full max-w-[1220px] relative my-0 mx-auto">
+            <div class="w-full h-[60px] flex items-center justify-between">
+                <div class="flex items-center">
 
-    <div class="flex w-full mx-auto my-0">
-        <div class="grid grid-cols-[300px,1fr,300px] w-full max-w-[1220px] mx-auto my-0">
-            <div class="flex gap-[25px] items-center">
-                <button class="flex flex-col gap-[8px]" id="open-nav">
-                    <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
-                    <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
-                    <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
-                </button>
+                    <button class=" flex flex-col gap-[8px]" id="open-nav">
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                    </button>
 
-                <h1 class="font-['Cormorant_Garamond'] font-bold text-[45px]">Artikel</h1>
+                    <h2 class="font-['Cormorant_Garamond'] lg:flex hidden ml-2 font-bold text-[45px]"><a
+                            href="landingpage.html">Artikel</a>
+                    </h2>
 
-            </div>
+                </div>
+                <h2 class="font-['Cormorant_Garamond'] lg:hidden   font-bold text-[45px]"><a
+                        href="landingpage.html">Artikel</a>
+                </h2>
 
-            <div class="flex items-center justify-center">
-            </div>
+                <div class="flex items-center justify-end">
+                    <button
+                        class="loginButton lg:flex hidden  font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
+                            href="login.html">LOG IN</a>
 
-            <div class="flex items-center justify-end">
-                <button
-                    class="loginButton font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
-                        href="login.html">LOG
-                        IN</a>
-                </button>
+                    </button>
 
+
+                    <img class="absolute lg:hidden flex h-[28px]" src="iconassets/user.svg">
+
+
+                </div>
             </div>
 
         </div>
 
     </div>
 
-    <div class="flex w-full mx-auto my-0">
-        <div class="flex w-full max-w-[1250px] mx-auto my-0 p-[15px] items-center justify-between">
-            <div class="w-full flex flex-row justify-between">
+    <div class="flex w-full mx-0 my-auto">
+        <div class="hidden lg:flex w-full max-w-[1250px] my-0 mx-auto p-[15px] items-center justify-between">
+            <div class=" w-full flex flex-col sm:flex-row justify-between ">
 
                 <p class="font-['Inter']"> PAGI, PEKAN BARU 25 ‘ C</p>
 
@@ -126,19 +134,40 @@
                     <li><a href="Homepage.html">INDONESIA</a></li>
                     <li><a href="#">EKONOMI</a></li>
                     <li><a href="#">PENDIDIKAN</a></li>
-                    <li><a href="#">POLITIK</a></li>
+                    <li><a href="secondPage.html">POLITIK</a></li>
                     <li><a href="#">SCIENCE</a></li>
                     <li><a href="#">SPORT</a></li>
                 </ul>
 
 
 
+
                 <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
+
             </div>
 
+
         </div>
+
     </div>
 
+    <div class="flex w-full my-0 mx-auto ">
+        <div class="w-full my-0 mx-auto p-[15px] items-center justify-between hidden max-[1024px]:flex ">
+            <div class=" flex flex-row sm:flex-row justify-center w-full min-[100px]:text-[12px]">
+
+
+                <p class="font-['Inter']">PAGI, PEKAN BARU 25 ‘ C</p>
+                <span class="mx-[10px]">&#183; </span>
+                <p class="font-['Inter']">MINGGU, 30 JANUARI 2023</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- header -->
 
     <div class="bg-[url('assets/wavygradient.svg')] pt-[7cm] pb-[6cm]   ">
         <div class="flex flex-col  mt-[30px]  h-full max-w-[1220px] mx-auto relative ">
@@ -155,8 +184,26 @@
 
     <div class="mx-auto my-0 max-w-[1250px] w-full p-[15px] mt-[40px] relative ">
         <div
-            class="grid grid-cols-[1fr,1fr,1fr,1fr] gap-[20px] border-black border-b-[3px]   border-t-[1px]  pb-[100px] mb-5">
-            <div class="contentA px-[10px] py-[10px]">
+            class="grid grid-cols-[1fr] sm:grid-cols-[1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] gap-[20px] border-black border-b-[3px]   border-t-[1px]  pb-[100px] mb-5">
+            <div class="bg-black px-[10px] py-[10px] ">
+                <button
+                    class="px-[15px] py-[2px]  mb-3 rounded-full bg-[#F2F1E9] font-[Inter] hover:bg-[#fff] duration-[200ms]">
+                    <a href="login.html">Baca Sekarang</a>
+                </button>
+
+                <h4 class=" font-[Inter] text-[24px] block font-bold text-white mb-3 leading-7">
+                    Akses lebih banyak berita
+                </h4>
+
+                <span class="font-[Lato] text-[15px] text-white  leading-5">
+                    Untuk kamu yang tertarik dalam membaca terkait seputar berita yang sedang diperbincangkan bisa
+                    langsung akses ke halaman berikut ini
+                </span>
+
+
+            </div>
+
+            <div class="contentA px-[10px] py-[10px] border-black border-b-[1px]">
                 <button
                     class="px-[15px] py-[2px] mb-3 rounded-full bg-[#F2F1E9] font-[Inter] hover:bg-[#fff] duration-[200ms]">
                     Politik
@@ -175,7 +222,7 @@
                 </p>
             </div>
 
-            <div class=" px-[10px] py-[10px]">
+            <div class=" px-[10px] py-[10px] border-black border-b-[1px]">
                 <button
                     class="px-[15px] py-[2px]  mb-3 rounded-full bg-[#F2F1E9] font-[Inter] hover:bg-[#fff] duration-[200ms]">
                     Ekonomi
@@ -194,7 +241,7 @@
                 </p>
             </div>
 
-            <div class=" px-[10px] py-[10px]">
+            <div class=" px-[10px] py-[10px] border-black border-b-[1px]">
                 <button
                     class="px-[15px] py-[2px]  mb-3 rounded-full bg-[#F2F1E9] font-[Inter] hover:bg-[#fff] duration-[200ms]">
                     Science
@@ -213,27 +260,11 @@
                 </p>
             </div>
 
-            <div class="bg-black px-[10px] py-[10px]">
-                <button
-                    class="px-[15px] py-[2px]  mb-3 rounded-full bg-[#F2F1E9] font-[Inter] hover:bg-[#fff] duration-[200ms]">
-                    <a href="login.html">Baca Sekarang</a>
-                </button>
-
-                <h4 class=" font-[Inter] text-[24px] block font-bold text-white mb-3 leading-7">
-                    Akses lebih banyak berita
-                </h4>
-
-                <span class="font-[Lato] text-[15px] text-white  leading-5">
-                    Untuk kamu yang tertarik dalam membaca terkait seputar berita yang sedang diperbincangkan bisa
-                    langsung akses ke halaman berikut ini
-                </span>
-
-
-            </div>
 
         </div>
 
-        <div class="grid grid-cols-[1fr,598px] gap-[3px] mb-[40px] border-black pb-[200px] border-b-[3px]">
+        <div
+            class="grid grid-cols-[1fr] lg:grid-cols-[1fr,598px] gap-[3px] mb-[40px] border-black pb-[200px] border-b-[3px]">
 
             <div>
                 <h4 class="font-[Inter] text-[50px] block font-bold text-[#064025]">
@@ -245,8 +276,8 @@
                 </span>
             </div>
 
-            <div class=" flex flex-row gap-1 justify-between">
-                <div class="w-[48%]">
+            <div class=" flex flex-col sm:flex-row gap-1 justify-between">
+                <div class="w-full sm:w-[48%]">
                     <h4 class=" font-[Inter] text-[24px] block font-bold text-[#064025] mb-3 leading-7">
                         Videos Contradict Initial Police Report on Tyre Nichols Arrest
                     </h4>
@@ -259,13 +290,13 @@
                         officer’s gun. But videos from the scene refute that account.
                     </p>
 
-                    <p class="font-[Lato] text-[13px] text-end">
+                    <p class="font-[Lato] text-[13px] text-start sm:text-end">
                         BACA ARTIKEL
                     </p>
                 </div>
 
 
-                <img class=" w-[49%] object-cover" src="assets/pexels-brotin-biswas-518543.jpg">
+                <img class="w-full sm:w-[300px] object-cover" src="assets/pexels-brotin-biswas-518543.jpg">
             </div>
 
 
@@ -275,7 +306,8 @@
         </div>
 
 
-        <div class="grid grid-cols-[1fr,598px] gap-[3px] mb-[40px]  border-black pb-[200px] border-b-[3px]">
+        <div
+            class="grid grid-cols-[1fr] lg:grid-cols-[1fr,598px] gap-[3px] mb-[40px]  border-black pb-[200px] border-b-[3px]">
 
             <div>
                 <h4 class="font-[Inter] text-[50px] block font-bold text-[#064025]">
@@ -287,8 +319,8 @@
                 </span>
             </div>
 
-            <div class=" flex flex-row gap-1 justify-between">
-                <div class="w-[48%] ">
+            <div class=" flex flex-col sm:flex-row gap-1 justify-between">
+                <div class="w-full sm:w-[48%] ">
                     <h4 class=" font-[Inter] text-[24px] block font-bold text-[#064025] mb-3 leading-7">
                         Videos Contradict Initial Police Report on Tyre Nichols Arrest
                     </h4>
@@ -301,18 +333,19 @@
                         officer’s gun. But videos from the scene refute that account.
                     </p>
 
-                    <p class="font-[Lato] text-[13px] text-end">
+                    <p class="font-[Lato] text-[13px] text-start sm:text-end">
                         BACA ARTIKEL
                     </p>
                 </div>
 
 
-                <img class="w-[49%] object-cover" src="assets/pexels-brotin-biswas-518543.jpg">
+                <img class="w-full sm:w-[300px] object-cover" src="assets/pexels-brotin-biswas-518543.jpg">
             </div>
 
         </div>
 
-        <div class="grid grid-cols-[1fr,598px] gap-[3px] mb-[40px]  border-black pb-[200px] border-b-[3px]">
+        <div
+            class="grid grid-cols-[1fr] lg:grid-cols-[1fr,598px] gap-[3px] mb-[40px]  border-black pb-[200px] border-b-[3px]">
 
             <div>
                 <h4 class="font-[Inter] text-[50px] block font-bold text-[#064025]">
@@ -324,8 +357,8 @@
                 </span>
             </div>
 
-            <div class=" flex flex-row gap-1 justify-between">
-                <div class="w-[48%] ">
+            <div class=" flex flex-col sm:flex-row gap-1 justify-between">
+                <div class="w-full sm:w-[48%] ">
                     <h4 class=" font-[Inter] text-[24px] block font-bold text-[#064025] mb-3 leading-7">
                         Videos Contradict Initial Police Report on Tyre Nichols Arrest
                     </h4>
@@ -338,18 +371,18 @@
                         officer’s gun. But videos from the scene refute that account.
                     </p>
 
-                    <p class="font-[Lato] text-[13px] text-end">
+                    <p class="font-[Lato] text-[13px] text-start sm:text-end">
                         BACA ARTIKEL
                     </p>
                 </div>
 
 
-                <img class="w-[49%] object-cover" src="assets/pexels-brotin-biswas-518543.jpg">
+                <img class="w-full sm:w-[300px] object-cover" src="assets/pexels-brotin-biswas-518543.jpg">
             </div>
 
         </div>
 
-        <div class="grid grid-cols-[1fr,598px] gap-[3px] mb-[40px]  ">
+        <div class="grid grid-cols-[1fr] lg:grid-cols-[1fr,598px] gap-[3px] mb-[40px]  ">
 
             <div>
                 <h4 class="font-[Inter] text-[50px] block font-bold text-[#064025]">
@@ -363,8 +396,8 @@
                 </span>
             </div>
 
-            <div class=" flex flex-row gap-1 justify-between">
-                <div class="w-[48%] ">
+            <div class=" flex flex-col sm:flex-row gap-1 justify-between">
+                <div class="w-full sm:w-[48%] ">
                     <h4 class=" font-[Inter] text-[24px] block font-bold text-[#064025] mb-3 leading-7">
                         French
                         protests
@@ -381,7 +414,7 @@
                         officer’s gun. But videos from the scene refute that account.
                     </p>
 
-                    <p class="font-[Lato] text-[13px] text-end"><a href="readingPage.html">
+                    <p class="font-[Lato] text-[13px] text-start sm:text-end"><a href="readingPage.html">
                             BACA ARTIKEL
                         </a>
 
@@ -389,7 +422,7 @@
                 </div>
 
 
-                <img class="w-[49%] object-cover" src="assets/pexels-brotin-biswas-518543.jpg">
+                <img class="w-full sm:w-[300px] object-cover" src="assets/pexels-brotin-biswas-518543.jpg">
             </div>
 
         </div>
@@ -397,21 +430,123 @@
 
     </div>
 
+    <footer class="block sm:hidden">
+        <div class=" bg-black h-full mt-[30px] max-w-[639px] sm:hidden mx-auto my-0 pb-5">
+
+
+            <div class="flex flex-col text-white p-[15px]">
+
+                <h4 class="font-['Cormorant_Garamond'] font-bold text-[40px] text-center">
+                    Artikel
+                </h4>
+
+                <div
+                    class="h-full z-10 top-0 left-0 bg-black text-white pt-[20px] font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn font-bold">Category</button>
+                    <div class="hidden">
+
+                        <div class="flex flex-row sm:flex-row gap-[80px] font-[lato]">
+
+                            <div>
+
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Indonesia</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Pendidikan</a>
+                            </div>
+
+                            <div>
+
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Science</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Politik</a>
+                            </div>
+
+                            <div>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Ekonomi</a>
+                                <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                    href="#">Sport</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
 
 
 
+                <div class=" font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px]">
+                    <button class="dropdown-btn font-bold">About</button>
+                    <div class="hidden">
 
-    <footer>
-        <div class=" bg-[#000] h-auto mt-[30px] pt-[100px]">
-            <div class="flex flex-col max-w-[1220px] max-w-[1220px] mx-auto my-0 h-[400px]">
-                <div class="grid grid-cols-[800px,1fr,1fr,1fr] gap-[20px] text-white">
-                    <div class=" flex flex-col h-[200px] border-black border-r-[1px] px-[10px]  ">
-                        <h4 class="font-['Cormorant_Garamond'] font-bold text-[60px]">
+                        <div class="flex flex-col">
+
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Tentang Artikel</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Hubungi</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Admin</a>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class=" font-[Lato] text-[17px] border-white border-b-[1px]  pt-[10px] pb-[10px] mb-5">
+                    <button class="dropdown-btn font-bold">Follow Us</button>
+                    <div class="hidden">
+
+                        <div class="flex flex-col">
+
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Instagram</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Facebook</a>
+                            <a class="text-[13px] block border-0 w-full text-left cursor-pointer outline-none"
+                                href="#">Tiktok</a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <span class="font-[Lato] text-[10px] text-center h-[70px]">
+                    2023 Artikel - All Copyright Reserved
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <footer class="hidden sm:block">
+        <div class=" bg-black mt-[30px]">
+            <div class=" flex flex-col my-0 mx-auto justify-center h-[400px] items-center">
+                <div class="grid grid-cols-[3fr,1fr,1fr,1fr] gap-[20px] text-white">
+                    <div class=" flex flex-col px-[10px] ">
+                        <h4 class="font-['Cormorant_Garamond'] font-bold text-[40px]">
                             Artikel
                         </h4>
 
-                        <span class="font-[Lato] text-[15px] w-[370px]  ">
-                            website ini berisikan berita-berita seputar di indonesia dengan tampilan desain yang menarik
+                        <span class="font-[Lato] text-[13px] w-[350px]  ">
+                            website ini berisikan berita-berita seputar di indonesia dengan tampilan desain yang
+                            menarik
                             dan
                             mudah dibaca
                         </span>
@@ -421,12 +556,12 @@
                         </span>
                     </div>
 
-                    <div class="px-[10px]">
-                        <p class="font-[Lato] text-[20px]">
+                    <div class="px-[5px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>Categories</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
+                        <div class="font-[Lato] text-[13px] flex flex-col">
                             <span>
                                 Indonesia
                             </span>
@@ -457,12 +592,12 @@
 
 
 
-                    <div class=" flex flex-col px-[10px]">
-                        <p class="font-[Lato] text-[20px]">
+                    <div class=" flex flex-col px-[5px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>Follow Us</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
+                        <div class="font-[Lato] text-[13px] flex flex-col">
                             <span>
                                 Instagram
                             </span>
@@ -479,16 +614,16 @@
                         </div>
                     </div>
 
-                    <div class="  px-[10px]">
+                    <div class="px-[5px]">
 
 
-                        <p class="font-[Lato] text-[20px]">
+                        <p class="font-[Lato] text-[15px]">
                             <b>About</b>
                         </p>
 
-                        <div class="font-[Lato] text-[15px] flex flex-col">
-                            <span>
-                                About us
+                        <div class="font-[Lato] text-[14px] flex flex-col">
+                            <span><a href="aboutUs.html">About us</a>
+
                             </span>
 
                             <span>
@@ -496,9 +631,9 @@
                             </span>
 
                             <span><a href="loginAdmin.html">
+
                                     Admin
                                 </a>
-
                             </span>
                         </div>
 
@@ -513,6 +648,11 @@
     </footer>
 
 
+
+
+
+
+
     <script src="HiddenContent.js"></script>
     <script>
         document.getElementById('open-nav').addEventListener('click', function () {
@@ -521,6 +661,23 @@
         document.getElementById('close-nav').addEventListener('click', function () {
             document.getElementById('side-navigation').classList.add('hide');
         });
+    </script>
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
     </script>
 </body>
 
