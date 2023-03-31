@@ -21,9 +21,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
 </head>
 
+
+<style>
+    /* Style the dropdown button */
+    .dropdown button {
+        color: black;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Style the dropdown content */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 1.5cm;
+        z-index: 1;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    /* Style the dropdown links */
+    .dropdown-content a {
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Show the dropdown content on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+</style>
+
 <body>
 
-    <div class=" min-w-[640px] max-w-[1024px] my-0 mx-auto ">
+    <!-- <div class=" min-w-[640px] max-w-[1024px] my-0 mx-auto ">
         <div class="flex flex-row justify-center text-center">
             <div class="flex flex-col w-[60%]">
                 <img class="w-[100%]" src="assets/2.jpg">
@@ -337,7 +375,17 @@
 
 
 
+    </div> -->
+
+    <div class="hover">
+        <button class="text-black p-[10px] text-[16px] border-none cursor-pointer">
+            <img class="w-[20px] mt-[4px]" src="iconassets/chevron-down.svg ">
+        </button>
+        <div class="block absolute right-[1.5cm] z-10 bg-white border-black border-[1px] rounded-[10px]">
+            <a class="text-black px-[16px] py-[8px] block" href="#">log out</a>
+        </div>
     </div>
 
 
+    </script>
 </body>
