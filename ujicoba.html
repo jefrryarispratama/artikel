@@ -5,387 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Uji coba</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 30px;
+            background: rgb(4, 4, 19);
+            align-items: center;
+        }
+
+        #searchBox {
+            width: 50%;
+            height: 50px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        #input {
+            width: 80%;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+        #searchBtn {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: none;
+            background: crimson;
+            color: white;
+            cursor: pointer;
+        }
+
+        .content-container {
+            width: 90%;
+            color: white;
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: justify;
+            max-width: 700px;
+            margin-top: 20px;
+            font-family: sans-serif
+        }
+
+        /* javascript */
+        mark {
+            background: yellow;
+
+        }
+    </style>
 </head>
 
-
-<style>
-    /* Style the dropdown button */
-    .dropdown button {
-        color: black;
-        padding: 10px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Style the dropdown content */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        right: 1.5cm;
-        z-index: 1;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 10px;
-    }
-
-    /* Style the dropdown links */
-    .dropdown-content a {
-        color: black;
-        padding: 8px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-    /* Show the dropdown content on hover */
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-
-</style>
-
 <body>
+    <div id="searchBox">
+        <input type="text" id="input" placeholder="Search">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="content-container" id="content">
+        <p id="paragraph">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur iusto deserunt in debitis, adipisci dolore
+            mollitia tempore autem exercitationem provident dicta natus odio earum inventore optio saepe animi at qui.
+            Doloremque repellendus quae expedita facilis, accusantium dolor cupiditate officiis, cumque laboriosam
+            itaque ratione eligendi excepturi iure quidem laborum, modi provident corrupti. Odit, consectetur. Autem
+            harum veritatis cum fuga. Vero, impedit.
+
+        </p>
 
-    <!-- <div class=" min-w-[640px] max-w-[1024px] my-0 mx-auto ">
-        <div class="flex flex-row justify-center text-center">
-            <div class="flex flex-col w-[60%]">
-                <img class="w-[100%]" src="assets/2.jpg">
-                <h4 class="font-[Inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8 "> <a
-                        href="readingPage.html">French protests
-                        intensify
-                        against
-                        pension age
-                        rise</a>
-
-                </h4>
-
-                <p class="font-[Lato] mb-[30px] pb-5 leading-6 border-black border-b-[1px]">The police said Mr. Nichols
-                    refused to obey directions,
-                    “started to
-                    fight” and
-                    reached for an
-                    officer’s gun. But videos from the scene refute that account.p
-                </p>
-
-            </div>
-
-
-
-        </div>
-
-
-        <div class="w-[60%]   my-0 mx-auto flex flex-row">
-            <div class="flex flex-col px-[10px]">
-                <h4 class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] ">
-                    Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-
-                <p class="font-[Lato] mb-[30px] pb-5 leading-6 border-black border-b-[1px]">
-                    The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
-                    an
-                    officer’s gun. But videos from the scene refute that account.
-
-                </p>
-
-            </div>
-
-            <div class="flex flex-col px-[10px]">
-                <h4 class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] ">
-                    Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-
-                <p class="font-[Lato] mb-[30px]  leading-6  pb-5 border-black border-b-[1px]">
-                    The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
-                    an
-                    officer’s gun. But videos from the scene refute that account.
-
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="w-[60%]  my-0 mx-auto flex flex-row border-black border-b-[1px]">
-            <div class="flex flex-row">
-                <div class="flex flex-col px-[10px]">
-                    <h4 class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] ">
-                        Videos
-                        Contradict Initial Police Report on Tyre Nichols Arrest
-                    </h4>
-
-                    <p class="font-[Lato] mb-[30px]  leading-6">
-                        The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
-                        an
-                        officer’s gun. But videos from the scene refute that account.
-
-                    </p>
-
-                </div>
-
-                <div class="flex flex-col px-[10px]">
-                    <h4 class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] ">
-                        Videos
-                        Contradict Initial Police Report on Tyre Nichols Arrest
-                    </h4>
-
-                    <p class="font-[Lato] mb-[30px]  leading-6">
-                        The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
-                        an
-                        officer’s gun. But videos from the scene refute that account.
-
-                    </p>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="flex flex-row justify-center text-center pt-[10px]">
-            <div class="flex flex-col w-[60%]">
-                <img class="w-[100%]" src="assets/2.jpg">
-                <h4 class="font-[Inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8 "> <a
-                        href="readingPage.html">French protests
-                        intensify
-                        against
-                        pension age
-                        rise</a>
-
-                </h4>
-
-                <p class="font-[Lato] mb-[30px] leading-6 border-black border-b-[1px] pb-5">The police said Mr. Nichols
-                    refused to obey directions,
-                    “started to
-                    fight” and
-                    reached for an
-                    officer’s gun. But videos from the scene refute that account.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="w-[60%]   my-0 mx-auto flex flex-row">
-            <div class="flex flex-col px-[10px] border-black border-r-[1px]">
-
-                <img class="object-cover" src="assets/2.jpg">
-                <h4 class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] ">
-                    Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-
-                <p class="font-[Lato]   leading-6">
-                    The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
-                    an
-                    officer’s gun. But videos from the scene refute that account.
-
-                </p>
-
-            </div>
-
-            <div class="flex flex-col px-[10px]">
-                <img class="object-cover" src="assets/2.jpg">
-                <h4 class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] ">
-                    Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-
-                <p class="font-[Lato] leading-6">
-                    The police said Mr. Nichols refused to obey directions, “started to fight” and reached for
-                    an
-                    officer’s gun. But videos from the scene refute that account.
-
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="flex flex-row justify-center text-center mt-[30px] ">
-            <div class="flex flex-col w-[60%] border-black border-t-[1px] pt-3">
-                <img class="w-[100%]" src="assets/2.jpg">
-                <h4 class="font-[Inter] text-[27px] font-bold text-[#064025] mb-[18px] leading-8 "> <a
-                        href="readingPage.html">French protests
-                        intensify
-                        against
-                        pension age
-                        rise</a>
-
-                </h4>
-
-                <p class="font-[Lato] mb-[10px] leading-6 pb-3 border-black border-b-[1px]">The police said
-                    Mr. Nichols refused to obey directions,
-                    “started to
-                    fight” and
-                    reached for an
-                    officer’s gun. But videos from the scene refute that account.
-                </p>
-
-            </div>
-
-
-
-        </div>
-
-        <div class="w-[60%]   my-0 mx-auto flex flex-row ">
-            <div class="flex flex-col px-[10px]">
-                <h4
-                    class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] pb-3 border-black border-b-[1px]">
-                    Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-            </div>
-
-            <div class="flex flex-col px-[10px]">
-                <h4
-                    class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] mb-[18px] pb-3 border-black border-b-[1px] ">
-                    Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-            </div>
-
-        </div>
-
-        <div class="w-[60%]   my-0 mx-auto flex flex-row">
-            <div class="flex flex-col px-[10px]">
-                <h4
-                    class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] mb-[18px] pb-3 border-black border-b-[1px]">
-                    Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-            </div>
-
-            <div class="flex flex-col px-[10px]">
-                <h4
-                    class="font-[Inter] text-[20px] font-bold text-[#064025] mb-[18px] mb-[18px] pb-3 border-black border-b-[1px]">
-                    Videos
-                    Contradict Initial Police Report on Tyre Nichols Arrest
-                </h4>
-            </div>
-
-        </div>
-
-        <div class="w-[60%] my-0 mx-auto ">
-
-            <div class="grid grid-cols-[1fr,1fr] gap-4">
-                <div>
-                    <img class="object-cover" src="assets/2.jpg">
-                    <h4 class="font-[Inter] text-[24px] font-bold text-[#064025] mb-[18px] leading-8 "> <a
-                            href="readingPage.html">French protests
-                            intensify
-                            against
-                            pension age
-                            rise</a>
-
-                    </h4>
-
-                    <p class="font-[Lato] mb-[10px] leading-6 pb-3 border-black border-b-[1px]">The police said
-                        Mr. Nichols refused to obey directions,
-                        “started to
-                        fight” and
-                        reached for an
-                        officer’s gun. But videos from the scene refute that account.
-                    </p>
-                </div>
-
-                <div>
-                    <img class="object-cover" src="assets/2.jpg">
-                    <h4 class="font-[Inter] text-[24px] font-bold text-[#064025] mb-[18px] leading-8 "> <a
-                            href="readingPage.html">French protests
-                            intensify
-                            against
-                            pension age
-                            rise</a>
-
-                    </h4>
-
-                    <p class="font-[Lato] mb-[10px] leading-6 pb-3 border-black border-b-[1px]">The police said
-                        Mr. Nichols refused to obey directions,
-                        “started to
-                        fight” and
-                        reached for an
-                        officer’s gun. But videos from the scene refute that account.
-                    </p>
-                </div>
-
-                <div>
-                    <img class="object-cover" src="assets/2.jpg">
-                    <h4 class="font-[Inter] text-[24px] font-bold text-[#064025] mb-[18px] leading-8 "> <a
-                            href="readingPage.html">French protests
-                            intensify
-                            against
-                            pension age
-                            rise</a>
-
-                    </h4>
-
-                    <p class="font-[Lato] mb-[10px] leading-6 pb-3 border-black border-b-[1px]">The police said
-                        Mr. Nichols refused to obey directions,
-                        “started to
-                        fight” and
-                        reached for an
-                        officer’s gun. But videos from the scene refute that account.
-                    </p>
-                </div>
-
-                <div>
-                    <img class="object-cover" src="assets/2.jpg">
-                    <h4 class="font-[Inter] text-[24px] font-bold text-[#064025] mb-[18px] leading-8 "> <a
-                            href="readingPage.html">French protests
-                            intensify
-                            against
-                            pension age
-                            rise</a>
-
-                    </h4>
-
-                    <p class="font-[Lato] mb-[10px] leading-6 pb-3 border-black border-b-[1px]">The police said
-                        Mr. Nichols refused to obey directions,
-                        “started to
-                        fight” and
-                        reached for an
-                        officer’s gun. But videos from the scene refute that account.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-    </div> -->
-
-    <div class="hover">
-        <button class="text-black p-[10px] text-[16px] border-none cursor-pointer">
-            <img class="w-[20px] mt-[4px]" src="iconassets/chevron-down.svg ">
-        </button>
-        <div class="block absolute right-[1.5cm] z-10 bg-white border-black border-[1px] rounded-[10px]">
-            <a class="text-black px-[16px] py-[8px] block" href="#">log out</a>
-        </div>
     </div>
 
 
+
+
+    <script>
+        const paragraph = document.getElementById("paragraph");
+        const searchBtn = document.getElementById('searchBtn')
+
+        searchBtn.addEventListener('click', () => {
+            let input = document.getElementById('input').value
+
+            if (input !== "") {
+                let regExp = new RegExp(input, 'gi')
+                paragraph.innerHTML = paragraph.textContent.replace(regExp, "<mark>$&</mark>")
+            }
+        })
     </script>
 </body>
+
+</html>

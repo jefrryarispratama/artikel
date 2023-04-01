@@ -1,9 +1,13 @@
 .menu {
     position: fixed;
     bottom: 9cm;
-    right: 200px;
+    right: 80px;
     width: 100%;
     transition: .5s ;
+}
+
+@media screen and (min-width:1000px) {
+    .menu {right: 200px;}
 }
 
 .sliding{

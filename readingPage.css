@@ -1,3 +1,7 @@
+
+* {
+ scroll-behavior: smooth;   
+}
 .loginButton{
     transition: background-color 0.5s, color 0.5s;
     
@@ -28,7 +32,11 @@
 }
 
 .hideComment{
-    right: -500px !important;
+    right: -829px !important;
+}
+
+@media screen and (min-width:830px) {
+    .hideComment{right: -500px !important;}
 }
 
 
@@ -47,4 +55,10 @@ height: 200px !important;
 
 .showOn{
     opacity: 1 !important;
+    
 }
+
+.highlight {
+    background-color: yellow;
+  }
+  

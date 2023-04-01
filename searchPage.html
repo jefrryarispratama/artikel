@@ -19,6 +19,40 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="searchPage.css">
+    <style>
+        .dropdown button {
+            color: black;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: fixed;
+            top:1.5cm ;
+            right: 4cm;
+            z-index: 1;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        /* Style the dropdown links */
+        .dropdown-content a {
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 
 
 </head>
@@ -33,11 +67,21 @@
                 <input class="py-[10px] px-[5px] outline-none  text-[24px]" placeholder="search">
             </div>
 
-            <div class=" items-center flex ml-3">
-                <p>Berdasarkan waktu
-                </p>
+            <div class="dropdown">
+                <div class=" items-center flex ml-3">
+                    <p class="text-[11px] sm:text-base">Berdasarkan waktu
+                    </p>
 
-                <img class="h-[20px] mt-1" src="iconassets/chevron-down.svg">
+
+                    <button>
+                        <img class="w-[20px] mt-[4px]" src="iconassets/chevron-down.svg ">
+                    </button>
+                    <div class="dropdown-content">
+                        <a class="border border-b-[1px]" href="#">Kemarin</a>
+                        <a class="border border-b-[1px]" href="#">Seminggu lalu</a>
+                        <a href="#">bulan lalu</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -54,31 +98,31 @@
 
                 <div class="flex flex-row gap-3">
 
-                        <div >
+                    <div>
 
-                            <h4
-                                class="font-[inter] text-[17px] sm:text-[23px] font-bold text-[#064025] mb-[5px] leading-8">
-                                Videos Contradict Initial Police Report on Tyre Nichols Arrest
-                            </h4>
+                        <h4 class="font-[inter] text-[17px] sm:text-[23px] font-bold text-[#064025] mb-[5px] leading-8">
+                            Videos Contradict Initial Police Report on Tyre Nichols Arrest
+                        </h4>
 
-                            <p class="font-[lato] text-[13px] sm:text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Cumque,
-                                rem quis
-                                numquam reiciendis dolore nemo mollitia debitis pariatur, totam commodi nihil aliquid
-                                voluptate
-                                molestias quas velit libero quia? Nostrum, a.</p>
+                        <p class="font-[lato] text-[13px] sm:text-[14px]">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Cumque,
+                            rem quis
+                            numquam reiciendis dolore nemo mollitia debitis pariatur, totam commodi nihil aliquid
+                            voluptate
+                            molestias quas velit libero quia? Nostrum, a.</p>
 
-                            <span class="font-[lato] text-[12px]">
-                                By Wilson Andrew &#183; March 20, 2023
+                        <span class="font-[lato] text-[12px]">
+                            By Wilson Andrew &#183; March 20, 2023
 
-                            </span>
-                        </div>
+                        </span>
+                    </div>
 
-                        <div>
-                            <img class="w-[500px] lg:w-[600px] h-auto object-cover object-center"
-                                src="assets/pexels-brotin-biswas-518543.jpg">
-                        </div>
-                    
+                    <div>
+                        <img class="w-[500px] lg:w-[600px] h-auto object-cover object-center"
+                            src="assets/pexels-brotin-biswas-518543.jpg">
+                    </div>
+
                 </div>
 
             </div>

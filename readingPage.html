@@ -89,7 +89,8 @@
 
     <!-- <----->
 
-    <div id="commentTag" class="flex fixed right-0 h-full bg-white hideComment z-10 overflow-auto">
+    <div id="commentTag"
+        class="flex fixed right-0 h-full bg-white hideComment z-10 overflow-auto w-full min-[830px]:w-[500px]">
         <section class=" h-full  px-[50px] ">
             <div class=" mb-3 pb-2 border-black border-b-[1px] flex justify-between items-center mt-5">
                 <h3 class="font-['Cormorant_Garamond'] font-[700] text-[35px] ">Comment</h3>
@@ -156,7 +157,7 @@
                     </div>
 
 
-                    <p class="w-[350px]">
+                    <p class="w-full">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit saepe aperiam sequi
                         consequatur modi ex id nam placeat distinctio, atque, molestiae, ad dicta! Quas cumque
                         voluptate
@@ -165,7 +166,7 @@
 
                     <div class=" flex flex-col pb-8 border-black border-b-[1px] mt-5">
 
-                        <textarea class="autoresizing rounded-sm p-2 drop-shadow-md w-[350px] mb-2 "
+                        <textarea class="autoresizing rounded-sm p-2 drop-shadow-md w-full mb-2 "
                             placeholder="Balas "></textarea>
 
                         <div>
@@ -278,7 +279,7 @@
     <div class=" flex flex-col  gap-[25px] items-center">
         <div class="flex flex-col sm:[50%] md:w-[80%] lg:w-[70%] mb-8 ">
             <div class="flex justify-center mb-2">
-                <div
+                <div id="scrollUp"
                     class=" px-[15px] py-[1px] rounded-full bg-[#F2F1E9] font-[Inter] hover:bg-[#fff] duration-[200ms] 	">
                     Politik
                 </div>
@@ -365,9 +366,9 @@
             </p>
 
             <div class="border-black border-b-[1px] mt-[90px] relative">
-                <button class="absolute">
-
-                </button>
+                <a href="#scrollUp" class="absolute right-[90px] -top-5 border-black border-[1px] bg-white">
+                    <img class="w-[50px]" src="iconassets/chevron-down.svg">
+                </a>
 
             </div>
 
@@ -380,7 +381,7 @@
 
     <div class="max-w-[1250px] my-0 mx-auto">
         <div
-            class="grid sm:grid-cols-[1fr,1fr] md:grid-cols-[1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] mt-[2.5cm] mt-0 ml-[15px] mr-[15px] mb-0 gap-[20px] mb-5 border-black border-b-[1px] pb-6 mb-5">
+            class="grid px-5 sm:grid-cols-[1fr,1fr] md:grid-cols-[1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] mt-[2.5cm] mt-0 ml-[15px] mr-[15px] mb-0 gap-[20px] mb-5 border-black border-b-[1px] pb-6 mb-5">
             <div class="text-center">
                 <img src="assets/pexels-brotin-biswas-518543.jpg">
                 <h4 class="font-[Inter] text-[25px] block font-bold text-[#064025] mb-[18px] leading-8">
@@ -734,7 +735,7 @@
                     <img src="iconassets/bookmark.svg">
                 </a>
             </button>
-            <button class="iconfeature" id="menu-2">
+            <button class="iconfeature" id="menu-2" onclick="Window.find()">
                 <img src="iconassets/search.svg">
             </button>
             <button class="iconfeature" id="menu-1">
@@ -745,6 +746,7 @@
             </button>
         </div>
     </div>
+    
 
     <!-- small icon -->
 
@@ -796,12 +798,16 @@
         window.addEventListener("scroll", function (event) {
             if (this.scrollY >= 600 && this.scrollY <= 1200) {
                 document.getElementById('slideIn').classList.add('showOn')
+                document.getElementById('slideIn').style.visibility = 'visible'
             }
             else {
                 document.getElementById('slideIn').classList.remove('showOn')
+                document.getElementById('slideIn').style.visibility = 'hidden'
             }
         }, false);
+
     </script>
+
 </body>
 
 </html>
