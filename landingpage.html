@@ -28,7 +28,7 @@
 <body>
     <div class="flex">
         <section id="side-navigation"
-            class="hide w-full md:w-[40%] lg:w-[25%] h-full overflow-y-auto border-black border-[0.1px] fixed top-0 bg-white z-10">
+            class="hide w-[100%] md:w-[50%] lg:w-[30%] h-full overflow-y-auto border-black border-[0.1px] fixed top-0 bg-white z-10">
 
             <button id="close-nav">
                 <img class="right-5 top-3 absolute h-[30px]" src="iconassets/x.svg">
@@ -86,49 +86,47 @@
 
     <!-- <-- -----------------  -->
 
-    <div class="relative flex w-full my-0 mx-auto ">
-        <div class="  w-full max-w-[1220px] relative my-0 mx-auto">
-            <div class="w-full h-[60px] flex items-center justify-between">
-                <div class="flex items-center">
+    <div class="flex justify-between items-center max-w-[1220px]  my-0 mx-auto">
 
-                    <button class=" flex flex-col gap-[8px]" id="open-nav">
-                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
-                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
-                        <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
-                    </button>
+        <div class="flex items-center">
+            <button class=" flex flex-col gap-[8px] " id="open-nav">
+                <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+                <span class="bg-black h-[2px] w-[30px] rounded-[5px]"></span>
+            </button>
 
-                    <h2 class="font-['Cormorant_Garamond'] lg:flex hidden ml-2 font-bold text-[45px]"><a
-                            href="landingpage.html">Artikel</a>
-                    </h2>
+            <h2 class="hidden lg:flex font-['Cormorant_Garamond'] font-bold text-[45px] ml-2"><a
+                    href="landingpage.html">Artikel</a>
+            </h2>
+        </div>
 
-                </div>
-                <h2 class="font-['Cormorant_Garamond'] lg:hidden   font-bold text-[45px]"><a
-                        href="landingpage.html">Artikel</a>
-                </h2>
-
-                <div class="flex items-center justify-end">
-                    <button
-                        class="loginButton lg:flex hidden  font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
-                            href="login.html">LOG IN</a>
-
-                    </button>
-
-
-                    <button>
-                        <img class="block lg:hidden flex h-[28px]" src="iconassets/user.svg">
-                    </button>
-
-
-                </div>
-            </div>
+        <div class="flex">
+            <h2 class="lg:hidden font-['Cormorant_Garamond'] font-bold text-[45px]"><a
+                    href="landingpage.html">Artikel</a>
+            </h2>
 
         </div>
 
+        <div class="flex">
+            <button
+                class="hidden lg:block loginButton h-[35px] font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
+                    href="login.html">LOG IN</a>
+            </button>
+
+            <button class="flex lg:hidden">
+                <img class="h-[30px]" src="iconassets/search.svg">
+            </button>
+
+            <button class="flex lg:hidden">
+                <img class="h-[30px]" src="iconassets/user.svg">
+            </button>
+
+        </div>
     </div>
 
     <div class="flex w-full mx-0 my-auto">
         <div class="hidden lg:flex w-full max-w-[1250px] my-0 mx-auto p-[15px] items-center justify-between">
-            <div class=" w-full flex flex-col sm:flex-row justify-between ">
+            <div class=" w-full flex flex-row justify-between ">
 
                 <p class="font-['Inter']"> PAGI, PEKAN BARU 25 ‘ C</p>
 
@@ -155,7 +153,7 @@
 
     <div class="flex w-full my-0 mx-auto ">
         <div class="w-full my-0 mx-auto p-[15px] items-center justify-between hidden max-[1024px]:flex ">
-            <div class=" flex flex-row sm:flex-row justify-center w-full min-[100px]:text-[12px]">
+            <div class=" flex flex-row justify-center w-full min-[100px]:text-[12px]">
 
 
                 <p class="font-['Inter']">PAGI, PEKAN BARU 25 ‘ C</p>
@@ -168,6 +166,7 @@
         </div>
 
     </div>
+
 
     <!-- header -->
 
