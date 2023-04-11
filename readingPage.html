@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="readingPage.css">
     <link rel="stylesheet" href="featureicon.css">
 
-
-
 </head>
 
 <body class="m-0 p-0">
@@ -30,14 +28,16 @@
         <section id="side-navigation"
             class="hide w-[100%] md:w-[50%] lg:w-[30%] h-full overflow-y-auto border-black border-[0.1px] fixed top-0 bg-white z-10">
 
-            <div id="close-nav">
-                <img class="right-5 top-3 absolute h-[30px]" src="iconassets/x.svg">
-            </div>
+
 
             <div>
-
                 <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px] mt-[18px] ml-[25px]">Menu</h2>
             </div>
+
+            <button id="close-nav">
+                <img class="right-5 top-3 absolute h-[30px]" src="iconassets/x.svg">
+            </button>
+
 
             <div class=" pr-[40px] mb-2 font-['Inter']  m-[25px] pb-2 border-black border-b-[1px] font-semibold">
                 <p class="mb-1">Homepage</p>
@@ -77,7 +77,6 @@
                 <p class="mb-1">About Artikel</p>
 
                 <p class="mb-1">Contact Us</p>
-
 
 
             </div>
@@ -211,26 +210,32 @@
                     href="landingpage.html">Artikel</a>
             </h2>
 
-            <div class="hidden lg:flex relative">
+            <div id="searchBarUp" class="hidden lg:flex relative" id="searchBox">
 
                 <input
-                    class="h-[33px] w-[480px] rounded-full mr-[80px]  focus:outline-none px-[20px] border-[1.5px] border-current"
-                    placeholder="search">
+                    class=" h-[33px] w-[480px] rounded-full mr-[80px]  focus:outline-none px-[20px] border-[1.5px] border-current"
+                    placeholder="search" id="input">
 
-                <button class="absolute top-[-7px] right-[100px] w-[25px] h-[24px]">
-
+                <button id="searchBtn" class="absolute top-[4px] right-[95px] w-[25px] h-[24px]">
                     <img class="w-full bg-white" src="iconassets/search.svg ">
                 </button>
             </div>
         </div>
 
-        <div class="flex">
+        <div class="flex  justify-end">
             <button
                 class="hidden lg:block loginButton h-[35px] font-['Inter'] bg-[white] px-[15px] py-[5px] border-[1.5px] border-color border-[#000000] rounded-[5px] font-bold text-sm"><a
                     href="login.html">LOG IN</a>
             </button>
 
-            <button class="flex lg:hidden">
+            <form class="w-[100px] flex lg:hidden mr-2" id="searchForm">
+                <input class=" border-black border-[1px] w-[100%] px-1" type="text" placeholder="search">
+                <button class="border-black border-[1px]  border-l-[0px] px-1">
+                    Go
+                </button>
+            </form>
+
+            <button class="## flex lg:hidden" onclick="tooglesearch()">
                 <img class="h-[30px]" src="iconassets/search.svg">
             </button>
 
@@ -324,8 +329,8 @@
         <img class="p-5 w-full h-[290px] sm:p-5 sm:w-full sm:h-[350px] md:w-[90%] md:h-[450px] lg:w-[80%] lg:h-[450px] object-cover object-center mb-[50px]"
             src="assets/pexels-brotin-biswas-518543.jpg ">
 
-        <div class=" w-[70%]  h-full">
-            <p class="font-[Lato]  text-normal text-justify ">
+        <div class=" w-[70%]  h-full " id="content">
+            <p class="font-[Lato]  text-normal text-justify " id="paragraph">
                 Netflix’s new documentary, Pamela, a Love Story, is the second pop culture offering about Pamela
                 Anderson to emerge in our current moment of revisiting the tales of famous women of the ’90s and
                 2000s
@@ -740,14 +745,16 @@
     <!-- idnya diubah yang menu -->
     <div style="transition:.5s; opacity: 0;" class="menu " id="slideIn">
         <div>
-            <button class="iconfeature" id="menu-3"><a href="bookmark.html">
 
-                    <img src="iconassets/bookmark.svg">
-                </a>
+            <!-- wilson tercinta tolong ya ini di perbaiki kata abng fred ini urusan -->
+            <button class="iconfeature" id="menu-3">
+                <img src="assets/save-instagram.png" alt="">
+                <img src="assets/save-instagram (1).png">
             </button>
             <a href="#mainInput">
-                <button class="iconfeature" id="menu-2">
-                    <img src="iconassets/search.svg">
+                <button class="iconfeature" id="menu-2"><a href="#">
+                        <img src="iconassets/search.svg">
+                    </a>
                 </button>
             </a>
             <button class="iconfeature" id="menu-1">
@@ -818,6 +825,25 @@
             }
         }, false);
 
+
+        //untuk highlight
+        const paragraph = document.getElementById("paragraph");
+        const searchBtn = document.getElementById('searchBtn')
+
+        searchBtn.addEventListener('click', () => {
+            let input = document.getElementById('input').value
+
+            if (input !== "") {
+                let regExp = new RegExp(input, 'gi')
+                paragraph.innerHTML = paragraph.textContent.replace(regExp, "<mark>$&</mark>")
+                paragraph.scrollIntoView();
+            }
+        })
+
+        //searchform 
+        function tooglesearch() {
+            document.getElementById('searchForm').classList.toggle('hidden')
+        }
     </script>
 
 </body>

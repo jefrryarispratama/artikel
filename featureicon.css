@@ -23,11 +23,19 @@
     background-color: white !important;
 }
 
-button img {
+.menu div button img {
     width: 2pc;
     margin: 10px;
     background-color: white;
 }
+
+.menu div button >svg {
+    width: 1.5pc;
+    margin: 10px;
+    background-color: white;
+}
+
+
 
 div.menu button:nth-of-type(1) {
     position: absolute;
