@@ -33,22 +33,19 @@
 </head>
 
 <body class="m-0 p-0">
+
     <header>
         <div class="flex items-center justify-between px-5 border-black border-b-[1px] mb-[60px] ">
             <div>
                 <h2 class="font-['Cormorant_Garamond'] font-[700] text-[50px]
                 max-[1024px]:text-[40px]">
-                    Artikel | Admin
+                    Artikel | User
                 </h2>
             </div>
 
             <div class="flex flex-row p-[26px]	hidden lg:flex">
-                <button class="mr-[5px]">
-                    <span><a href="login.html">
-
-                            Willson Andrew
-                        </a>
-                    </span>
+                <button>
+                    Willson Andrew
                 </button>
 
                 <div class="dropdown">
@@ -62,9 +59,15 @@
 
             </div>
 
-            <button>
-                <img class=" lg:hidden flex h-[28px]" src="iconassets/user.svg">
-            </button>
+            <div class="lg:hidden flex align-center">
+                <button>
+                    <img class="  h-[28px] mr-2" src="iconassets/help-circle.svg">
+                </button>
+
+                <button>
+                    <img class=" h-[28px]" src="iconassets/user.svg">
+                </button>
+            </div>
 
 
         </div>
@@ -109,15 +112,24 @@
                 </div>
 
 
-                <div class="mb-3 w-[100px] font-['Inter'] ">
+                <div class="mb-3 w-[119px] font-['Inter'] ">
                     <label for="EmailAccount"> Kategori</label>
-                    <input type="text" value="" class="mt-1 block w-full px-3 py-1.5 bg-white border-[1px] border-black  rounded-md text-sm shadow-sm placeholder-slate-400
-                    focus:outline-none " />
+                    <!-- <input type="text" value="" class="mt-1 block w-full px-3 py-1.5 bg-white border-[1px] border-black  rounded-md text-sm shadow-sm placeholder-slate-400
+                    focus:outline-none " /> -->
+                    <select name="kategori" id="kategori" class="mt-1 block w-full px-3 py-1.5 bg-white border-[1px] border-black  rounded-md text-sm shadow-sm placeholder-slate-400
+                    focus:outline-none">
+                        <option value="ind">Indonesia</option>
+                        <option value="Pendidikan">Pendidikan</option>
+                        <option value="Ekonomi">Ekonomi</option>
+                        <option value="Science">Science</option>
+                        <option value="Politik">Politik</option>
+                        <option value="Sport">Sport</option>
+                    </select>
                 </div>
 
                 <div class="mb-3 font-['Inter']">
                     <label for="EmailAccount"> Gambar</label>
-                    <input type="text" value="" class="mt-1 block w-full px-3 py-1.5 bg-white border-[1px] border-black  rounded-md text-sm shadow-sm placeholder-slate-400
+                    <input type="file" value="" class="mt-1 block w-full px-3 py-1.5 bg-white border-[1px] border-black  rounded-md text-sm shadow-sm placeholder-slate-400
                     focus:outline-none " />
                 </div>
 
