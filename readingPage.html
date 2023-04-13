@@ -110,10 +110,15 @@
                         Wilson Ganteng
                     </span>
                 </div>
-                <textarea id="expandingBox" class=" rounded-sm	p-2 drop-shadow-md w-full mb-2 "
+                <textarea id="expandingBox" class=" rounded-sm	p-2 drop-shadow-md w-full mb-2 outline-none"
                     placeholder="What are your thoughts? "></textarea>
 
-                <div>
+                <div class="flex justify-end gap-3">
+                    <button id="commentBox"
+                        class="float-right border-[1px] border-black px-[20px] py-[5px] rounded-lg hover:bg-slate-50">
+                        Cancel
+                    </button>
+
                     <button id="commentBox"
                         class="float-right border-[1px] border-black px-[20px] py-[5px] rounded-lg hover:bg-slate-50">
                         Kirim
@@ -165,10 +170,16 @@
 
                     <div class=" flex flex-col pb-8 border-black border-b-[1px] mt-5">
 
-                        <textarea class="autoresizing rounded-sm p-2 drop-shadow-md w-full mb-2 "
+                        <textarea class="autoresizing rounded-sm p-2 drop-shadow-md w-full mb-2 outline-none"
                             placeholder="Balas "></textarea>
 
-                        <div>
+                        <div class="flex gap-2 justify-end">
+
+                            <button id="commentBox"
+                                class="float-right border-[1px] border-black px-[20px] py-[5px] rounded-lg hover:bg-slate-50">
+                                Cancel
+                            </button>
+
                             <button id="commentBox"
                                 class="float-right border-[1px] border-black px-[20px] py-[5px] rounded-lg hover:bg-slate-50">
                                 Kirim
@@ -191,7 +202,7 @@
 
     <!-- comment section -->
 
-    <div class="flex justify-between items-center max-w-[1220px]  my-0 mx-auto">
+    <div class="flex justify-between items-center max-w-[1220px]  my-0 mx-[3px] sm:mx-auto">
 
         <div class="flex items-center">
             <button class=" flex flex-col gap-[8px]" id="open-nav">
@@ -210,13 +221,13 @@
                     href="landingpage.html">Artikel</a>
             </h2>
 
-            <div id="searchBarUp" class="hidden lg:flex relative" id="searchBox">
+            <div class="hidden lg:flex relative">
 
                 <input
                     class=" h-[33px] w-[480px] rounded-full mr-[80px]  focus:outline-none px-[20px] border-[1.5px] border-current"
                     placeholder="search" id="input">
 
-                <button id="searchBtn" class="absolute top-[4px] right-[95px] w-[25px] h-[24px]">
+                <button class="absolute top-[4px] right-[95px] w-[25px] h-[24px]">
                     <img class="w-full bg-white" src="iconassets/search.svg ">
                 </button>
             </div>
@@ -228,8 +239,8 @@
                     href="login.html">LOG IN</a>
             </button>
 
-            <form class="w-[100px] flex lg:hidden mr-2" id="searchForm">
-                <input class=" border-black border-[1px] w-[100%] px-1" type="text" placeholder="search">
+            <form class="w-[100px] flex hidden mr-2" id="searchForm">
+                <input class=" border-black border-[1px] w-[100%] px-1 outline-none" type="text" placeholder="search">
                 <button class="border-black border-[1px]  border-l-[0px] px-1">
                     Go
                 </button>

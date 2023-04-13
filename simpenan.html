@@ -21,13 +21,13 @@
 
 
 <!-- white -->
-<svg width="95" height="136" viewBox="0 0 95 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- <svg width="95" height="136" viewBox="0 0 95 136" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
         d="M93.2923 134.75L47.5006 97.6667L1.70898 134.75V16.0833C1.70898 12.1493 3.0874 8.37637 5.541 5.59458C7.9946 2.81279 11.3224 1.25 14.7923 1.25H80.209C83.6789 1.25 87.0067 2.81279 89.4603 5.59458C91.9139 8.37637 93.2923 12.1493 93.2923 16.0833V134.75Z"
         stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
 
-<!-- filled -->
+ filled 
 <svg width="95" height="136" viewBox="0 0 95 136" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
         d="M93.2923 134.75L47.5006 97.6667L1.70898 134.75V16.0833C1.70898 12.1493 3.0874 8.37637 5.541 5.59458C7.9946 2.81279 11.3224 1.25 14.7923 1.25H80.209C83.6789 1.25 87.0067 2.81279 89.4603 5.59458C91.9139 8.37637 93.2923 12.1493 93.2923 16.0833V134.75Z"
@@ -65,4 +65,15 @@
             document.getElementById('commentTag').classList.toggle('hideComment');
             document.getElementById('slideIn').classList.toggle('sliding');
         });
-    </script>
+    </script> -->
+
+    <form class="w-[100px] flex hidden mr-2" id="searchForm">
+        <input class=" border-black border-[1px] w-[100%] px-1 outline-none" type="text" placeholder="search">
+        <button class="border-black border-[1px]  border-l-[0px] px-1">
+            Go
+        </button>
+    </form>
+
+    function tooglesearch() {
+        document.getElementById('searchForm').classList.toggle('hidden')
+    }
