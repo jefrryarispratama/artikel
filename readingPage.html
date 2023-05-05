@@ -138,7 +138,7 @@
                         </span>
                     </div>
 
-                    <div class="flex flex-col ml-2">
+                    <div class="flex flex-col ml-2  w-[100%]">
                         <div class="flex items-end justify-between relative">
                             <div>
 
@@ -166,11 +166,7 @@
 
                         <div class=" flex flex-col mt-5">
                             <p class="w-full">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit saepe aperiam
-                                sequi
-                                consequatur modi ex id nam placeat distinctio, atque, molestiae, ad dicta! Quas cumque
-                                voluptate
-                                quae voluptatum quis!
+                                test
                             </p>
 
                             <textarea class="autoresizing rounded-sm p-2 drop-shadow-md w-full mb-2 outline-none"
@@ -240,6 +236,69 @@
                                 quae voluptatum quis!
                             </p>
 
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col border-black border-b-[1px]">
+                <div class=" flex flex-row  mt-5 items-start">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span
+                            class="flex items-center justify-center bg-black rounded-full w-[30px] h-[30px] text-white">
+                            W
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col ml-2  w-[100%]">
+                        <div class="flex items-end justify-between relative">
+                            <div>
+
+                                <span>
+                                    Wilson cacad
+                                </span>
+
+                                <span class="text-[12px]">
+                                    1 detik yang lalu
+                                </span>
+                            </div>
+
+                            <button id="delete-menu" class="border-0 w-[17px] ">
+                                <img class="m-0" src="iconassets/dots.png">
+                            </button>
+
+                            <button id="deleting-menu"
+                                class="hidden absolute bg-white top-0 right-5 px-5 py-1 border-black border-[1px]">
+                                delete
+                            </button>
+                        </div>
+
+
+
+
+                        <div class=" flex flex-col mt-5">
+                            <p class="w-full">
+                                test
+                            </p>
+
+                            <textarea class="autoresizing rounded-sm p-2 drop-shadow-md w-full mb-2 outline-none"
+                                placeholder="Balas "></textarea>
+
+                            <div class="flex gap-2 justify-end">
+
+                                <button id="commentBox"
+                                    class="float-right border-[1px] border-black px-[20px] py-[5px] rounded-lg hover:bg-slate-50">
+                                    Cancel
+                                </button>
+
+                                <button id="commentBox"
+                                    class="float-right border-[1px] border-black px-[20px] py-[5px] rounded-lg hover:bg-slate-50">
+                                    Kirim
+                                </button>
+
                             </div>
 
 
@@ -248,10 +307,61 @@
                     </div>
                 </div>
 
-            </div>
 
+                <div class=" flex flex-row ml-[2.5rem] mt-5 items-start">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span
+                            class="flex items-center justify-center bg-black rounded-full w-[30px] h-[30px] text-white">
+                            W
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col ml-2">
+                        <div class="flex items-end justify-between relative">
+                            <div>
+
+                                <span>
+                                    Wilson cacad
+                                </span>
+
+                                <span class="text-[12px]">
+                                    1 detik yang lalu
+                                </span>
+                            </div>
+
+                            <button id="delete-menu" class="border-0 w-[17px] ">
+                                <img class="m-0" src="iconassets/dots.png">
+                            </button>
+
+                            <button id="deleting-menu"
+                                class="hidden absolute bg-white top-0 right-5 px-5 py-1 border-black border-[1px]">
+                                delete
+                            </button>
+                        </div>
+
+
+
+
+                        <div class=" flex flex-col pb-8 mt-5">
+                            <p class="w-full">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit saepe aperiam
+                                sequi
+                                consequatur modi ex id nam placeat distinctio, atque, molestiae, ad dicta! Quas cumque
+                                voluptate
+                                quae voluptatum quis!
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
         </section>
     </div>
+
+  
 
 
     <!-- comment section -->
@@ -281,7 +391,7 @@
                     class=" h-[33px] w-[480px] rounded-full mr-[80px]  focus:outline-none px-[20px] border-[1.5px] border-current"
                     placeholder="search" id="input">
 
-                <button class="absolute top-[4px] right-[95px] w-[25px] h-[24px]">
+                <button id="searchBtn" class="absolute top-[4px] right-[95px] w-[25px] h-[24px]">
                     <img class="w-full bg-white" src="iconassets/search.svg ">
                 </button>
             </div>
@@ -888,7 +998,7 @@
 
         //untuk highlight
         const paragraph = document.getElementById("paragraph");
-        const searchBtn = document.getElementById('searchBtn')
+        const searchBtn = document.getElementById("searchBtn")
 
         searchBtn.addEventListener('click', () => {
             let input = document.getElementById('input').value
@@ -898,7 +1008,7 @@
                 paragraph.innerHTML = paragraph.textContent.replace(regExp, "<mark>$&</mark>")
                 paragraph.scrollIntoView();
             }
-        })
+        });
 
         //searchform 
         function tooglesearch() {

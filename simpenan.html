@@ -1,79 +1,50 @@
-<!-- duplikat 1 -->
-<!-- duplikat 1 -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uji coba</title>
+</head>
 
+<style>
+    
 
-<!-- tutor cepet mati -->
-<!-- <div class="block sm:hidden">
-    ini bagian hp
-</div>
+</style>
 
-<div class="hidden sm:block lg:hidden">
-    ini bagian tablet ke bioskop
-</div>
+<body>
+    <div id="searchBox">
+        <input type="text" id="input" placeholder="Search">
+        <button id="searchBtn">Search</button>
+    </div>
 
-<div class="hidden lg:block">
-    ini bagian bioskop ke luar angkasa
-</div> -->
-
-<!-- ini untuk reading page untuk 1fr 1fr 1fr 1fr yang 4 row  -->
-<!-- grid-cols-[1fr] md: -->
-
-
-<!-- white -->
-<!-- <svg width="95" height="136" viewBox="0 0 95 136" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-        d="M93.2923 134.75L47.5006 97.6667L1.70898 134.75V16.0833C1.70898 12.1493 3.0874 8.37637 5.541 5.59458C7.9946 2.81279 11.3224 1.25 14.7923 1.25H80.209C83.6789 1.25 87.0067 2.81279 89.4603 5.59458C91.9139 8.37637 93.2923 12.1493 93.2923 16.0833V134.75Z"
-        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-</svg>
-
- filled 
-<svg width="95" height="136" viewBox="0 0 95 136" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-        d="M93.2923 134.75L47.5006 97.6667L1.70898 134.75V16.0833C1.70898 12.1493 3.0874 8.37637 5.541 5.59458C7.9946 2.81279 11.3224 1.25 14.7923 1.25H80.209C83.6789 1.25 87.0067 2.81279 89.4603 5.59458C91.9139 8.37637 93.2923 12.1493 93.2923 16.0833V134.75Z"
-        fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-</svg>
-
-<div class="flex flex-col ml-2 ">
-    <div class="flex items-end justify-between relative">
-        <div>
-
-            <span>
-                Wilson cacad
-            </span>
-
-            <span class="text-[12px]">
-                1 detik yang lalu
-            </span>
-        </div>
-
-        <button id="delete-menu" class="border-0 w-[17px] ">
-            <img class="m-0" src="iconassets/dots.png">
-        </button>
-
-        <button id="deleting-menu" class="hidden absolute bg-white top-0 right-5 px-5 py-1 border-black border-[1px]">
-            delete
-        </button>
+    <div class="content-container" id="content">
+        <p id="p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptatem aperiam, maxime debitis
+            tenetur quia modi labore qui aspernatur rem. Autem aut praesentium dolorum sit blanditiis nostrum.
+            Veritatis, blanditiis sequi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique culpa
+            voluptatem fugit eveniet, accusamus expedita suscipit id ipsam qui debitis possimus omnis ex provident
+            voluptatibus modi minima vitae quod? Nihil.
+        </p>
     </div>
 
     <script>
-        document.getElementById('delete-menu').addEventListener('click', function () {
-            document.getElementById('deleting-menu').classList.toggle('hidden');
-        })
 
-        document.getElementById('comment-exit').addEventListener('click', function () {
-            document.getElementById('commentTag').classList.toggle('hideComment');
-            document.getElementById('slideIn').classList.toggle('sliding');
+        const p = document.getElementById('p');
+        const searchBtn = document.getElementById("searchBtn");
+
+        searchBtn.addEventListener("click", () => {
+            let input = document.getElementById("input").value;
+
+            if (input !== "") {
+                let regExp = new RegExp(input, 'gi')
+                p.innerHTML = p.textContent.replace(regExp, "<mark>$&</mark>")
+            }
+
         });
-    </script> -->
+    </script>
 
-    <form class="w-[100px] flex hidden mr-2" id="searchForm">
-        <input class=" border-black border-[1px] w-[100%] px-1 outline-none" type="text" placeholder="search">
-        <button class="border-black border-[1px]  border-l-[0px] px-1">
-            Go
-        </button>
-    </form>
+</body>
 
-    function tooglesearch() {
-        document.getElementById('searchForm').classList.toggle('hidden')
-    }
+</html>
